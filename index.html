@@ -1769,8 +1769,101 @@
                 padding: 8px 10px;
             }
         }
-    </style>
-</head>
+    
+/* Theme Default (Light) is already defined in :root */
+[data-theme="dark"] {
+    --color-text-primary: #F3F4F6;
+    --color-text-secondary: #D1D5DB;
+    --color-text-muted: #9CA3AF;
+    --color-border: #374151;
+    --color-border-light: #1F2937;
+    --color-bg: #111827;
+    --color-bg-card: #1F2937;
+    --color-bg-table-header: #374151;
+    --gradient-badge: linear-gradient(135deg, rgba(5,150,105,0.2) 0%, rgba(37,99,235,0.2) 100%);
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.4);
+    --shadow-card: 0 4px 10px rgba(0,0,0,0.5);
+    background: var(--color-bg);
+}
+
+[data-theme="dark"] .stat-card {
+    background: #1F2937;
+    border-color: #374151;
+}
+
+[data-theme="dark"] .tab-nav {
+    background: rgba(31, 41, 55, 0.85);
+    border-color: rgba(55, 65, 81, 0.7);
+}
+
+[data-theme="dark"] .section, [data-theme="dark"] .heat-card {
+    background: #1F2937;
+    border-color: #374151;
+}
+
+[data-theme="dark"] .list-item, [data-theme="dark"] .content-card, [data-theme="dark"] .collapsible-header, [data-theme="dark"] .collapsible-content {
+    background: #1a2233 !important;
+    border-color: #374151;
+}
+
+[data-theme="dark"] .content-card:hover, [data-theme="dark"] .list-item:hover, [data-theme="dark"] .collapsible-header:hover {
+    background: #28354c !important;
+}
+
+[data-theme="dark"] .tracking-table th {
+    background: #374151;
+    color: #D1D5DB;
+}
+
+[data-theme="dark"] .tracking-table td {
+    border-color: #374151;
+}
+
+/* Theme Switcher Styles */
+.theme-switcher-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    background: var(--color-bg-table-header);
+    border: 1px solid var(--color-border-light);
+    border-radius: var(--radius-full);
+    padding: 2px;
+    box-shadow: var(--shadow-sm);
+    z-index: 100;
+}
+.theme-switcher-btn {
+    border: none;
+    background: transparent;
+    padding: 6px 10px;
+    border-radius: var(--radius-full);
+    cursor: pointer;
+    font-size: 14px;
+    color: var(--color-text-muted);
+    transition: all 0.2s;
+}
+.theme-switcher-btn.active {
+    background: var(--color-bg-card);
+    color: var(--color-text-primary);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+@media (max-width: 600px) {
+    .theme-switcher-container {
+        top: 10px;
+        right: 10px;
+        transform: scale(0.85);
+        transform-origin: top right;
+    }
+}
+\n    </style>
+    <script>
+(function(){
+    var saved = localStorage.getItem('theme') || 'system';
+    if(saved === 'dark' || (saved === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches)){
+        document.documentElement.setAttribute('data-theme', 'dark');
+    }
+})();
+</script>\n</head>
 <body>
     <div class="container">
         <!-- Header -->
@@ -3268,5 +3361,32 @@
             });
         }
     </script>
-</body>
+<script>\n
+// Theme Switcher Logic
+function getSavedTheme() { return localStorage.getItem('theme') || 'system'; }
+function applyTheme(theme) {
+    if (theme === 'dark' || (theme === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+    } else {
+        document.documentElement.removeAttribute('data-theme');
+    }
+    document.querySelectorAll('.theme-switcher-btn').forEach(btn => btn.classList.remove('active'));
+    let activeBtn = document.getElementById('theme-btn-' + theme);
+    if(activeBtn) activeBtn.classList.add('active');
+}
+window.setTheme = function(theme) {
+    localStorage.setItem('theme', theme);
+    applyTheme(theme);
+};
+// Init UI
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', () => applyTheme(getSavedTheme()));
+} else {
+    applyTheme(getSavedTheme());
+}
+// Listeners
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+    if(getSavedTheme() === 'system') applyTheme('system');
+});
+</script>\n</body>
 </html>

@@ -451,7 +451,11 @@ def generate_html(data: dict) -> str:
 </head>
 <body>
     <div class="container">
-        <div class="header">
+        <div class="header">\n            <div class="theme-switcher-container">
+    <button id="theme-btn-light" class="theme-switcher-btn" title="白天模式" onclick="setTheme('light')">☀️</button>
+    <button id="theme-btn-system" class="theme-switcher-btn active" title="跟随系统" onclick="setTheme('system')">💻</button>
+    <button id="theme-btn-dark" class="theme-switcher-btn" title="夜间模式" onclick="setTheme('dark')">🌙</button>
+</div>
             <div class="header-badge">📡 Joke的AI洞察项目 - AI日报</div>
             <div class="header-title">AI 日报 <span class="version-badge">v3.2</span></div>
             <div class="header-date">{date_obj.strftime("%Y年%-m月%-d日")} {weekday} | 五大板块：大模型 · AI Coding · AI应用 · AI行业 · 企业转型</div>
