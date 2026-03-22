@@ -265,6 +265,9 @@ grep -o "'$MONTH': \[[^\]]*\]" index.html | head -1
 
 # ===== 5. 先同步public版（因为public/index.html需要被commit进去） =====
 echo ""
+echo "\n📋 Step 3.5: 构建全站搜索索引"
+python3 scripts/build_search_index.py
+
 echo "📋 Step 4: 同步公开版（先于commit，确保public/index.html纳入提交）"
 python3 scripts/sync_to_public.py --full --force
 # 强制敏感词二次核查（不依赖sync_to_public自检）—— 发现残留直接abort，禁止继续推送

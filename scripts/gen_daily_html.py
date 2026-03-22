@@ -451,7 +451,10 @@ def generate_html(data: dict) -> str:
 </head>
 <body>
     <div class="container">
-        <div class="header">\n            <div class="theme-switcher-container">
+        <div class="header">\n        <div class="search-container">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="search-input" class="search-input" placeholder="搜索AI资讯..." autocomplete="off">
+    </div>\n            <div class="theme-switcher-container">
     <button id="theme-btn-light" class="theme-switcher-btn" title="白天模式" onclick="setTheme('light')">☀️</button>
     <button id="theme-btn-system" class="theme-switcher-btn active" title="跟随系统" onclick="setTheme('system')">💻</button>
     <button id="theme-btn-dark" class="theme-switcher-btn" title="夜间模式" onclick="setTheme('dark')">🌙</button>
