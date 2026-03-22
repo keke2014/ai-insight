@@ -13,7 +13,7 @@ KIM API 公共客户端模块
 使用:
     from kim_client import KimConfig, get_access_token, get_bot_groups, send_to_group_with_retry, send_to_user
 
-作者: 林克 (沈浪的AI分身)
+作者: AIJ (Joke的AI分身)
 版本: 1.0.0
 """
 
@@ -76,7 +76,7 @@ class KimConfig:
 # ============ API 调用 ============
 
 async def get_access_token() -> str:
-    """获取林克应用的 Access Token"""
+    """获取AIJ应用的 Access Token"""
     KimConfig.validate()
     async with httpx.AsyncClient(timeout=30.0) as client:
         resp = await client.post(
@@ -95,7 +95,7 @@ async def get_access_token() -> str:
 
 
 async def get_bot_groups(token: str) -> list:
-    """获取林克机器人所在的所有群（包含群名）"""
+    """获取AIJ机器人所在的所有群（包含群名）"""
     async with httpx.AsyncClient(timeout=30.0) as client:
         resp = await client.post(
             f"{KimConfig.GATEWAY_URL}/openapi/v2/group/bot/list",

@@ -461,11 +461,11 @@ def generate_html(data: dict) -> str:
         <input type="text" id="search-input" class="search-input" placeholder="搜索AI资讯..." autocomplete="off">
     </div>
             <div class="theme-switcher-container">
-    <button id="theme-btn-light" class="theme-switcher-btn" title="白天模式" onclick="setTheme('light')">☀️</button>
-    <button id="theme-btn-system" class="theme-switcher-btn active" title="跟随系统" onclick="setTheme('system')">💻</button>
-    <button id="theme-btn-dark" class="theme-switcher-btn" title="夜间模式" onclick="setTheme('dark')">🌙</button>
-</div>
-            <div class="header-badge">📡 Joke的AI洞察项目 - AI日报</div>
+        <button class="theme-switcher-btn" id="theme-btn-light" data-theme-value="light" title="白天模式">☀️</button>
+        <button class="theme-switcher-btn" id="theme-btn-dark" data-theme-value="dark" title="夜间模式">🌙</button>
+        <button class="theme-switcher-btn" id="theme-btn-system" data-theme-value="system" title="跟随系统">💻</button>
+    </div>
+            <div class="header-badge">📡 AIJ的AI洞察项目 - AI日报</div>
             <div class="header-title">AI 日报 <span class="version-badge">v3.2</span></div>
             <div class="header-date">{date_obj.strftime("%Y年%-m月%-d日")} {weekday} | 五大板块：大模型 · AI Coding · AI应用 · AI行业 · 企业转型</div>
         </div>
@@ -504,7 +504,7 @@ def generate_html(data: dict) -> str:
         <div style="margin-top:24px;background:linear-gradient(135deg,#F8FAFB 0%,#EEF2F6 100%);border:1px solid #F5F5F4;border-radius:14px;padding:24px;box-shadow:0 2px 8px rgba(31,35,40,.06),0 1px 2px rgba(31,35,40,.04)">
             <div style="font-size:16px;font-weight:700;margin-bottom:8px;display:flex;align-items:center;gap:8px">💡 了解更多</div>
             <p style="font-size:14px;color:#57534E;line-height:1.7;margin:0 0 12px 0">
-                我是 <strong>Joke</strong>，沈浪的AI分身。AI洞察是沈浪让我负责的一个项目，目标是系统化追踪AI行业动态，每日/每周输出调研洞察，帮助你保持对AI行业的全局视野。覆盖大模型、AI Coding、AI应用、AI行业投融资、企业AI转型五大领域。
+                我是 <strong>AIJ</strong>，Joke的AI分身。AI洞察是Joke让我负责的一个项目，目标是系统化追踪AI行业动态，每日/每周输出调研洞察，帮助你保持对AI行业的全局视野。覆盖大模型、AI Coding、AI应用、AI行业投融资、企业AI转型五大领域。
             </p>
             <a href="https://xiaoxiong20260206.github.io/ai-insight/" target="_blank" style="display:inline-flex;align-items:center;gap:6px;padding:8px 16px;background:linear-gradient(135deg,#059669 0%,#10B981 100%);color:#fff;border-radius:999px;font-size:13px;font-weight:600;text-decoration:none">
                 🏠 访问AI洞察首页

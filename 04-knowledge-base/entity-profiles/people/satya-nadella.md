@@ -49,4 +49,4 @@ Azure AI (基础设施) + Copilot (办公助手) + GitHub Copilot (开发者)
 ---
 
 *创建时间: 2026-03-13*
-*整理者: 林克 AI 助手*
+*整理者: AIJ AI 助手*

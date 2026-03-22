@@ -487,7 +487,7 @@ def _script_command(key: str, date: str) -> str:
 
 # ── 命令: finalize (Step 3 + Step 4) ─────────────────────
 def cmd_finalize(date: str) -> bool:
-    """一键执行: URL抽检 → 质量门 → HTML生成 → 部署 → 外部同步 → 林克首页"""
+    """一键执行: URL抽检 → 质量门 → HTML生成 → 部署 → 外部同步 → AIJ首页"""
     print(f"\n🚀 AI日报 Finalize: {date}")
     print("=" * 50)
 
@@ -529,8 +529,8 @@ def cmd_finalize(date: str) -> bool:
         mark_step(date, "deploy", "failed", error="部署失败")
         return False
 
-    # --- Step 4.5 + 4.6: 外部版同步 & 林克首页 — v9.8: 并行化（两者完全独立）---
-    print("\n  ⚡ Step 4.5+4.6: 外部版同步 & 林克首页同步（并行执行）...")
+    # --- Step 4.5 + 4.6: 外部版同步 & AIJ首页 — v9.8: 并行化（两者完全独立）---
+    print("\n  ⚡ Step 4.5+4.6: 外部版同步 & AIJ首页同步（并行执行）...")
     from concurrent.futures import ThreadPoolExecutor as _TPE, as_completed as _ac
     
     sync_ok = False
@@ -600,9 +600,9 @@ def _show_4_positions_summary(date: str) -> None:
     if p2.exists():
         content = p2.read_text(encoding="utf-8")
         has_date = date in content
-        has_link = "林克" in content
+        has_link = "AIJ" in content
         status = "✅" if (has_date and has_link) else "⚠️"
-        detail = f"日期{'✅' if has_date else '❌'} 林克{'✅' if has_link else '❌(疑似污染)'}"
+        detail = f"日期{'✅' if has_date else '❌'} AIJ{'✅' if has_link else '❌(疑似污染)'}"
         print(f"  ② 内部首页:    {status} {detail}")
         if not (has_date and has_link):
             all_ok = False
@@ -723,14 +723,14 @@ def run_external_sync() -> bool:
 
 
 def run_link_homepage_sync() -> bool:
-    """林克首页日报数据同步（v9.5 新增）"""
-    print("\n  📤 Step 4.6: 林克首页日报数据同步...")
+    """AIJ首页日报数据同步（v9.5 新增）"""
+    print("\n  📤 Step 4.6: AIJ首页日报数据同步...")
     homepage_scripts = PROJECT_DIR.parent / "scripts"
     link_homepage = PROJECT_DIR.parent / "link-homepage"
     
     if not homepage_scripts.exists():
         print(f"  ⚠️ 首页脚本目录不存在: {homepage_scripts}")
-        print("     跳过林克首页更新（不阻断）")
+        print("     跳过AIJ首页更新（不阻断）")
         return True  # 不阻断，因为这是可选依赖
     
     try:
@@ -749,13 +749,13 @@ def run_link_homepage_sync() -> bool:
             capture_output=True, text=True, timeout=180, cwd=str(PROJECT_DIR.parent)
         )
         if result.returncode == 0:
-            print(f"  ✅ 林克首页更新完成")
+            print(f"  ✅ AIJ首页更新完成")
         else:
-            print(f"  ⚠️ 林克首页部署警告: {result.stderr[:200]}")
+            print(f"  ⚠️ AIJ首页部署警告: {result.stderr[:200]}")
         
         return True
     except Exception as e:
-        print(f"  ⚠️ 林克首页更新异常: {e}")
+        print(f"  ⚠️ AIJ首页更新异常: {e}")
         return True  # 不阻断
 
 # ── 命令: push (Step 5) ──────────────────────────────────

@@ -14,7 +14,7 @@ AI日报质量门脚本 (Quality Gate)
   2. 中文引号检测
   3. 链接有效性 (禁止#占位符 + URL真实性抽检)
   4. 内容非空检查
-  5. ⭐ [v6.0新增] 林克自述(capability_update)必填检查
+  5. ⭐ [v6.0新增] AIJ自述(capability_update)必填检查
   6. ⭐ [v9.0新增] 板块均衡检查 (防大事件隧道视野)
   7. ⭐ [v8.3新增] 内容量检查 (防止修复时内容缩水 — 经验37)
   8. ⭐ [v2.0新增] 时效性验证 (发布日期在时间窗口内)
@@ -30,7 +30,7 @@ AI日报质量门脚本 (Quality Gate)
   18. 6处联动更新检查
   19. 外部版同步检查
 
-作者: 林克 (沈浪的AI分身)
+作者: AIJ (Joke的AI分身)
 版本: v10.1.0 (2026-03-20)
 
 v10.1更新 (小红书搜索策略调整 — v9.8):
@@ -38,9 +38,9 @@ v10.1更新 (小红书搜索策略调整 — v9.8):
 - 默认不搜索小红书，仅当用户明确要求时才执行
 - 小红书覆盖=0不再阻断部署，仅显示提示
 
-v10.0更新 (林克自述必填 — 经验43):
+v10.0更新 (AIJ自述必填 — 经验43):
 - 新增check_capability_update检查 — capability_update字段必填
-- 教训: 2026-03-19日报遗漏林克自述，用户反馈"为什么没有林克自述"
+- 教训: 2026-03-19日报遗漏AIJ自述，用户反馈"为什么没有AIJ自述"
 - 检查项从18项增加到19项
 
 v9.1更新 (WARNING→ERROR升级 — 经验40):
@@ -287,16 +287,16 @@ def check_content_nonempty(date_str: str) -> CheckResult:
 
 
 def check_capability_update(date_str: str) -> CheckResult:
-    """检查4.1: [v6.0新增] 林克自述(capability_update)必填检查
+    """检查4.1: [v6.0新增] AIJ自述(capability_update)必填检查
     
     规则:
     - JSON必须包含capability_update字段
     - 该字段不能为空字符串
-    - 教训: 2026-03-19日报遗漏此字段，用户反馈"为什么没有林克自述"
+    - 教训: 2026-03-19日报遗漏此字段，用户反馈"为什么没有AIJ自述"
     """
     json_path = DATA_PATH / f"daily-content-{date_str}.json"
     if not json_path.exists():
-        return CheckResult("林克自述", False, "JSON文件不存在")
+        return CheckResult("AIJ自述", False, "JSON文件不存在")
     
     try:
         data = _load_data(date_str) or json.loads(json_path.read_text(encoding="utf-8"))
@@ -304,22 +304,22 @@ def check_capability_update(date_str: str) -> CheckResult:
         
         if not capability_update:
             return CheckResult(
-                "林克自述", False,
-                "缺少capability_update字段（林克自述）- 每期日报必须包含林克的个人视角分享",
+                "AIJ自述", False,
+                "缺少capability_update字段（AIJ自述）- 每期日报必须包含AIJ的个人视角分享",
                 severity="error"
             )
         
         # 检查是否过于简短
         if len(capability_update) < 50:
             return CheckResult(
-                "林克自述", False,
+                "AIJ自述", False,
                 f"capability_update内容过短({len(capability_update)}字符)，建议至少50字符",
                 severity="warning"
             )
         
-        return CheckResult("林克自述", True, f"已填写({len(capability_update)}字符)")
+        return CheckResult("AIJ自述", True, f"已填写({len(capability_update)}字符)")
     except Exception as e:
-        return CheckResult("林克自述", False, f"检查失败: {e}")
+        return CheckResult("AIJ自述", False, f"检查失败: {e}")
 
 
 def check_tab_balance(date_str: str) -> CheckResult:
@@ -1416,7 +1416,7 @@ def run_all_checks(date_str: str) -> Tuple[List[CheckResult], int, int, int]:
         check_chinese_quotes,
         check_link_validity,
         check_content_nonempty,
-        check_capability_update,     # v6.0新增 - 林克自述必填检查
+        check_capability_update,     # v6.0新增 - AIJ自述必填检查
         check_tab_balance,           # v9.0新增 - 板块均衡(防大事件隧道视野)
         check_content_volume,        # v8.3新增 - 内容量检查(防修复缩水)
         check_date_window,           # v2.0新增

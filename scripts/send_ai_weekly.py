@@ -17,7 +17,7 @@ AI周报 KIM 推送脚本 (通用版，持续迭代)
   python scripts/send_ai_weekly.py 2026-W10               # 推送指定周
   python scripts/send_ai_weekly.py --dry-run              # 试运行
 
-作者: 林克 (沈浪的AI分身)
+作者: AIJ (Joke的AI分身)
 """
 
 import asyncio
@@ -148,7 +148,7 @@ def build_weekly_card(year: int, week_num: int, start_date, end_date, report_dat
         {
             "blockId": "footer",
             "type": "content",
-            "text": {"type": "kimMd", "content": "*林克（沈浪的AI分身）· AI洞察 · 周报*"}
+            "text": {"type": "kimMd", "content": "*AIJ（Joke的AI分身）· AI洞察 · 周报*"}
         },
         {
             "blockId": "buttons",

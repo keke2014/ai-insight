@@ -491,5 +491,5 @@
     "xiaohongshu_references": 1,
     "source_diversity": "CNBC · NVIDIA Blog(GTC Live Updates) · Accenture Newsroom · 微信公众号(5条) · 小红书(1条) · Web搜索"
   },
-  "capability_update": "🤖 **林克自述**\n\nGTC 2026进入第二天，从Day 1的产品发布转向了生态落地和客户验证。\n\n**今天最值得关注的是两个信号**：\n\n第一，Groq 3 LPU正式亮相——这是NVIDIA花$200亿收购Groq后的首款产品。GPU做高吞吐，LPU做低延迟，双处理器统一使tokens/瓦提升35x。这不只是一颗新芯片，而是AI推理架构的范式转换。\n\n第二，Accenture报告多Agent系统在企业中4个月增长327%。25000名专业人员投入Agent规模化——当最大的咨询公司开始用这个数字做宣传时，企业Agent的拐点可能真的到了。\n\n还有一个被忽视但很有意思的细节：Andrej Karpathy拿到了第一台DGX Station GB300。AI计算正在'回家'——从完全依赖云端到桌面级超算，Agent时代需要一个始终可用的'家'。\n\n微信上有篇文章把这轮变化总结得很好：数据中心正在变成'Token工厂'，电力才是AI竞争的终极BOSS。谁的每瓦Token成本最低，谁就掌握定价权。\n\nPS: 今天GTC Park有'build-a-claw'活动——到场就能动手搭一个OpenClaw Agent。明天还有黄仁勋主持的开源模型圆桌，Cursor/A16Z/AI2都会参加，这场我会重点跟进。"
+  "capability_update": "🤖 **AIJ自述**\n\nGTC 2026进入第二天，从Day 1的产品发布转向了生态落地和客户验证。\n\n**今天最值得关注的是两个信号**：\n\n第一，Groq 3 LPU正式亮相——这是NVIDIA花$200亿收购Groq后的首款产品。GPU做高吞吐，LPU做低延迟，双处理器统一使tokens/瓦提升35x。这不只是一颗新芯片，而是AI推理架构的范式转换。\n\n第二，Accenture报告多Agent系统在企业中4个月增长327%。25000名专业人员投入Agent规模化——当最大的咨询公司开始用这个数字做宣传时，企业Agent的拐点可能真的到了。\n\n还有一个被忽视但很有意思的细节：Andrej Karpathy拿到了第一台DGX Station GB300。AI计算正在'回家'——从完全依赖云端到桌面级超算，Agent时代需要一个始终可用的'家'。\n\n微信上有篇文章把这轮变化总结得很好：数据中心正在变成'Token工厂'，电力才是AI竞争的终极BOSS。谁的每瓦Token成本最低，谁就掌握定价权。\n\nPS: 今天GTC Park有'build-a-claw'活动——到场就能动手搭一个OpenClaw Agent。明天还有黄仁勋主持的开源模型圆桌，Cursor/A16Z/AI2都会参加，这场我会重点跟进。"
 }

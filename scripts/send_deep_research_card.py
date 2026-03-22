@@ -16,7 +16,7 @@
   python scripts/send_deep_research_card.py --to-groups          # 发送到所有群
   python scripts/send_deep_research_card.py --dry-run            # 试运行
 
-作者: 林克 (沈浪的AI分身)
+作者: AIJ (Joke的AI分身)
 """
 
 import asyncio
@@ -55,7 +55,7 @@ RETRY_DELAY = 5
 
 # ============ API 调用 ============
 async def get_access_token() -> str:
-    """获取林克应用的 Access Token"""
+    """获取AIJ应用的 Access Token"""
     async with httpx.AsyncClient(timeout=30.0) as client:
         resp = await client.post(
             f"{GATEWAY_URL}/token/get",
@@ -73,7 +73,7 @@ async def get_access_token() -> str:
 
 
 async def get_bot_groups(token: str) -> list:
-    """获取林克机器人所在的所有群"""
+    """获取AIJ机器人所在的所有群"""
     async with httpx.AsyncClient(timeout=30.0) as client:
         resp = await client.post(
             f"{GATEWAY_URL}/openapi/v2/group/bot/list",
@@ -265,7 +265,7 @@ def build_deep_research_card() -> dict:
             {
                 "blockId": "footer",
                 "type": "content",
-                "text": {"type": "kimMd", "content": "*林克（沈浪的AI分身）· AI洞察 · 深度调研系列*"}
+                "text": {"type": "kimMd", "content": "*AIJ（Joke的AI分身）· AI洞察 · 深度调研系列*"}
             },
             {
                 "blockId": "buttons",
@@ -344,7 +344,7 @@ async def main():
         if not groups:
             print("⚠️ 未找到任何群")
             return
-        print(f"✅ 林克所在群数量: {len(groups)}")
+        print(f"✅ AIJ所在群数量: {len(groups)}")
         
         print("\n📤 开始推送到所有群...")
         success_count = 0

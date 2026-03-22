@@ -24,6 +24,18 @@ window.setTheme = function(theme) {
     localStorage.setItem('theme', theme);
     applyTheme(theme);
 };
+
+// Bind theme switcher events
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.theme-switcher-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const theme = btn.getAttribute('data-theme-value');
+            window.setTheme(theme);
+        });
+    });
+    applyTheme(getSavedTheme());
+});
+
 // Init UI
 if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', () => applyTheme(getSavedTheme()));

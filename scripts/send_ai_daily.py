@@ -19,7 +19,7 @@ AI日报 KIM 推送脚本 (通用版，持续迭代)
   python scripts/send_ai_daily.py --preview          # 先发给自己预览
   python scripts/send_ai_daily.py --dry-run          # 试运行，不实际发送
 
-作者: 林克 (沈浪的AI分身)
+作者: AIJ (Joke的AI分身)
 """
 
 import asyncio
@@ -74,7 +74,7 @@ WEEKDAYS = ["周一", "周二", "周三", "周四", "周五", "周六", "周日"
 
 # ============ API 调用 ============
 async def get_access_token() -> str:
-    """获取林克应用的 Access Token"""
+    """获取AIJ应用的 Access Token"""
     async with httpx.AsyncClient(timeout=30.0) as client:
         resp = await client.post(
             f"{GATEWAY_URL}/token/get",
@@ -92,7 +92,7 @@ async def get_access_token() -> str:
 
 
 async def get_bot_groups(token: str) -> list:
-    """获取林克机器人所在的所有群（包含群名）"""
+    """获取AIJ机器人所在的所有群（包含群名）"""
     async with httpx.AsyncClient(timeout=30.0) as client:
         resp = await client.post(
             f"{GATEWAY_URL}/openapi/v2/group/bot/list",
@@ -444,7 +444,7 @@ def build_card_v35(date_str: str, data: Dict) -> dict:
         blocks.append({"blockId": f"sec{i+1}", "type": "content", "text": {"type": "kimMd", "content": section_content}})
         blocks.append({"blockId": f"div{i+1}", "type": "divider"})
     
-    # 林克自述/能力更新（可选，从data中读取）
+    # AIJ自述/能力更新（可选，从data中读取）
     capability_update = data.get("capability_update", "")
     if capability_update:
         blocks.append({
@@ -458,7 +458,7 @@ def build_card_v35(date_str: str, data: Dict) -> dict:
     blocks.append({
         "blockId": "footer",
         "type": "content",
-        "text": {"type": "kimMd", "content": "*林克（沈浪的AI分身）· AI洞察*"},
+        "text": {"type": "kimMd", "content": "*AIJ（Joke的AI分身）· AI洞察*"},
     })
     blocks.append({
         "blockId": "buttons",
@@ -559,7 +559,7 @@ async def main():
             print("⚠️ 未找到目标群（CodeFlicker + 研发效能中心）")
             return
         
-        print(f"✅ 林克所在群数量: {len(all_groups)}，日报目标群: {len(groups)}")
+        print(f"✅ AIJ所在群数量: {len(all_groups)}，日报目标群: {len(groups)}")
         for g in groups:
             print(f"   → {g['groupName']} ({g['groupId']})")
         

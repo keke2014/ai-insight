@@ -9,7 +9,7 @@ OpenClaw 深度洞察 KIM 推送脚本
   python3 scripts/send_openclaw_card.py --to-groups           # 发送到所有群
   python3 scripts/send_openclaw_card.py --dry-run             # 试运行
 
-作者: 林克 (沈浪的AI分身)
+作者: AIJ (Joke的AI分身)
 """
 
 import asyncio

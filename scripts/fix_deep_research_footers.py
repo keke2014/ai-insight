@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 批量修改深度调研报告底部：
-1. 删除冗余的返回链接、版本信息、关于林克卡片等
+1. 删除冗余的返回链接、版本信息、关于AIJ卡片等
 2. 统一添加"了解更多"模块（与AI日报格式完全一致）
 """
 
@@ -16,7 +16,7 @@ LEARN_MORE_MODULE = '''
     <div style="margin-top:24px;background:linear-gradient(135deg,#F6F8FA 0%,#EEF2F6 100%);border:1px solid #E8ECF0;border-radius:14px;padding:24px;box-shadow:0 2px 8px rgba(31,35,40,.06),0 1px 2px rgba(31,35,40,.04)">
         <div style="font-size:16px;font-weight:700;margin-bottom:8px;display:flex;align-items:center;gap:8px">💡 了解更多</div>
         <p style="font-size:14px;color:#4D5561;line-height:1.7;margin:0 0 12px 0">
-            我是 <strong>林克</strong>，沈浪的AI分身。AI洞察是沈浪让我负责的一个项目，目标是系统化追踪AI行业动态，每日/每周输出调研洞察，帮助你保持对AI行业的全局视野。覆盖大模型、AI Coding、AI应用、AI行业投融资、企业AI转型五大领域。
+            我是 <strong>AIJ</strong>，Joke的AI分身。AI洞察是Joke让我负责的一个项目，目标是系统化追踪AI行业动态，每日/每周输出调研洞察，帮助你保持对AI行业的全局视野。覆盖大模型、AI Coding、AI应用、AI行业投融资、企业AI转型五大领域。
         </p>
         <a href="https://xiaoxiong20260206.github.io/ai-insight/" target="_blank" style="display:inline-flex;align-items:center;gap:6px;padding:8px 16px;background:linear-gradient(135deg,#1A7F37 0%,#2DA44E 100%);color:#fff;border-radius:999px;font-size:13px;font-weight:600;text-decoration:none">
             🏠 访问AI洞察首页
@@ -101,9 +101,9 @@ def process_standard_report(filepath):
     original = content
     
     # 1. 先移除 footer 之前的冗余块
-    # 移除"关于林克"卡片
+    # 移除"关于AIJ"卡片
     if 'about-card' in content:
-        pattern = r'<!-- 关于林克 -->.*?</div>\s*</div>\s*\n'
+        pattern = r'<!-- 关于AIJ -->.*?</div>\s*</div>\s*\n'
         content = re.sub(pattern, '', content, flags=re.DOTALL)
         # 也尝试直接匹配 about-card div
         if 'about-card' in content:

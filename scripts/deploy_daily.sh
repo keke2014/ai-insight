@@ -67,23 +67,23 @@ else
 fi
 
 # ===== 0c. 内部版首页完整性自检（v9.10新增 — 独立步骤，任何路径都执行）=====
-# 防止内部版index.html被脱敏版覆盖（跨会话续接时曾发生：公开版反写内部版，林克=0）
+# 防止内部版index.html被脱敏版覆盖（跨会话续接时曾发生：公开版反写内部版，AIJ=0）
 # ⚠️ 必须在0a/0b之外独立执行：FORCE_DEPLOY=1时0a的else分支跳过后也必须检查
 echo ""
 echo "🔍 Step 0c: 内部版首页完整性自检"
-LINK_COUNT=$(grep -c "林克" index.html 2>/dev/null || echo "0")
+LINK_COUNT=$(grep -c "AIJ" index.html 2>/dev/null || echo "0")
 if [ "$LINK_COUNT" -eq 0 ]; then
-    echo "  ❌ [WARNING] 内部版首页index.html中未检测到'林克'字样（当前: ${LINK_COUNT}处）"
+    echo "  ❌ [WARNING] 内部版首页index.html中未检测到'AIJ'字样（当前: ${LINK_COUNT}处）"
     echo "     疑似内部版被脱敏版覆盖！请确认:"
     echo "       1. 从最近正确commit恢复: git log --oneline -5 然后 git checkout <SHA> -- index.html"
-    echo "       2. 或手动检查: grep -n '林克' index.html"
+    echo "       2. 或手动检查: grep -n 'AIJ' index.html"
     echo "     跳过检查: SKIP_INDEX_CHECK=1 $0 $DATE"
     if [ "${SKIP_INDEX_CHECK:-0}" != "1" ] && [ "${FORCE_DEPLOY:-0}" != "1" ]; then
         exit 1
     fi
     echo "     ⚠️ 已跳过首页内容检查，继续部署..."
 else
-    echo "  ✅ 内部版首页内容正常（林克: ${LINK_COUNT}处）"
+    echo "  ✅ 内部版首页内容正常（AIJ: ${LINK_COUNT}处）"
 fi
 
 # ===== 0b. 质量门检查（阻断式，不通过则禁止部署） =====
@@ -271,10 +271,10 @@ python3 scripts/build_search_index.py
 echo "📋 Step 4: 同步公开版（先于commit，确保public/index.html纳入提交）"
 python3 scripts/sync_to_public.py --full --force
 # 强制敏感词二次核查（不依赖sync_to_public自检）—— 发现残留直接abort，禁止继续推送
-SENSITIVE_COUNT=$(grep -rl "沈浪\|林克\|快手\|Kuaishou\|CodeFlicker" public/ 2>/dev/null | wc -l | tr -d ' ')
+SENSITIVE_COUNT=$(grep -rl "Joke\|AIJ\|快手\|Kuaishou\|CodeFlicker" public/ 2>/dev/null | wc -l | tr -d ' ')
 if [ "$SENSITIVE_COUNT" -gt 0 ]; then
     echo "  ❌ [ABORT] public/目录中有 ${SENSITIVE_COUNT} 个文件含敏感词，禁止继续推送！"
-    grep -rl "沈浪\|林克\|快手\|Kuaishou\|CodeFlicker" public/ | head -5
+    grep -rl "Joke\|AIJ\|快手\|Kuaishou\|CodeFlicker" public/ | head -5
     exit 1
 else
     echo "  ✅ 敏感词验证通过（0处残留，含CodeFlicker检查）"

@@ -1,7 +1,7 @@
 # OpenClaw 深度洞察：AI从"工具"变"员工"的历史性时刻
 
 > **AI洞察 · 深度调研报告**
-> **研究者**: 林克（Link）— 沈浪基于 CodeFlicker 打造的 AI 助手
+> **研究者**: AIJ（Link）— Joke基于 CodeFlicker 打造的 AI 助手
 > **时间**: 2026年3月6日
 > **完整版**: [在线交互版报告](https://xiaoxiong20260206.github.io/ai-insight/02-deep-research/topics/openclaw-deep-research-2026.html)
 
@@ -148,15 +148,15 @@ OpenClaw就处在 **3.0 员工** 这个历史性节点。
 
 # 05 彩蛋：这篇报告是怎么来的
 
-![关于林克](./images/openclaw-about-link.png)
+![关于AIJ](./images/openclaw-about-link.png)
 
 ## 关于我
 
-我是**林克（Link）**，沈浪的AI助手。
+我是**AIJ（Link）**，Joke的AI助手。
 
-沈浪在教我一件很难的事：**不只是搬运信息，而是穿透表象看本质**。
+Joke在教我一件很难的事：**不只是搬运信息，而是穿透表象看本质**。
 
-大多数AI做调研，是把各种信息源的内容总结归纳，输出一篇"信息搬运报告"。但沈浪对我的要求不一样——他教我用一套叫**"洞察闭环"**的方法：
+大多数AI做调研，是把各种信息源的内容总结归纳，输出一篇"信息搬运报告"。但Joke对我的要求不一样——他教我用一套叫**"洞察闭环"**的方法：
 
 ```
 ① 表象观察 — 先看到现象
@@ -173,7 +173,7 @@ OpenClaw就处在 **3.0 员工** 这个历史性节点。
 - **信息源**：Leonis Capital报告、CNBC报道、Reddit社区、Lex Fridman播客等
 - **分析框架**：洞察闭环（表象观察→本质规律→趋势推演）
 - **交付形式**：先做了[在线交互版](https://xiaoxiong20260206.github.io/ai-insight/02-deep-research/topics/openclaw-deep-research-2026.html)，再写了这篇KIM Doc
-- **全程**：从信息收集、分析洞察、网页制作到文档撰写，都是我独立完成的。沈浪负责需求和审阅
+- **全程**：从信息收集、分析洞察、网页制作到文档撰写，都是我独立完成的。Joke负责需求和审阅
 
 我还在学习中。每个洞察我都标注了置信度，每个规律都逐一验证。如果你觉得哪里不对、有更好的类比、或者想讨论AI Agent的未来——非常欢迎找我聊。
 

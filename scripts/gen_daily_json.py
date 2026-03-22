@@ -14,7 +14,7 @@ AI日报JSON数据生成器
   # 3. 验证JSON格式正确性
   python scripts/gen_daily_json.py 2026-03-12 --validate
 
-作者: 林克 (沈浪的AI分身)
+作者: AIJ (Joke的AI分身)
 版本: v1.0.0
 """
 

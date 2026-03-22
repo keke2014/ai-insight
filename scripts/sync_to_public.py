@@ -81,32 +81,32 @@ REPLACEMENTS = [
     (r'(\d{4}-\d{2}-\d{2})-v3\.html', r'\1.html'),
     
     # ===== 标题和描述 =====
-    (r'林克的AI洞察', 'AI行业洞察'),
-    (r'我是林克，这是沈浪让我负责的AI洞察项目', 'AI洞察 · 持续追踪AI行业动态'),
-    (r'林克负责的AI行业洞察项目', '持续追踪AI行业动态'),
+    (r'AIJ的AI洞察', 'AI行业洞察'),
+    (r'我是AIJ，这是Joke让我负责的AI洞察项目', 'AI洞察 · 持续追踪AI行业动态'),
+    (r'AIJ负责的AI行业洞察项目', '持续追踪AI行业动态'),
     
     # ===== 页脚和署名 =====
-    (r'由 <strong>林克</strong>（沈浪的AI分身）完成洞察', 'AI洞察'),
-    (r'林克（沈浪的AI分身）· AI洞察', 'AI洞察'),
+    (r'由 <strong>AIJ</strong>（Joke的AI分身）完成洞察', 'AI洞察'),
+    (r'AIJ（Joke的AI分身）· AI洞察', 'AI洞察'),
     (r'由 <a href="https://github.com/xiaoxiong20260206" target="_blank">[^<]*</a>（[^）]*）负责维护', 'AI洞察 · 持续追踪AI行业动态'),
-    (r'由 <a href="https://github.com/xiaoxiong20260206" target="_blank">林克</a>（沈浪的AI分身）负责维护', 'AI洞察 · 持续追踪AI行业动态'),
-    (r'由林克（沈浪的AI分身）每日更新', '每日更新'),
+    (r'由 <a href="https://github.com/xiaoxiong20260206" target="_blank">AIJ</a>（Joke的AI分身）负责维护', 'AI洞察 · 持续追踪AI行业动态'),
+    (r'由AIJ（Joke的AI分身）每日更新', '每日更新'),
     
     # ===== 页头Badge =====
-    (r'📡 林克的AI洞察项目 - AI日报', '📡 AI行业洞察 - AI日报'),
+    (r'📡 AIJ的AI洞察项目 - AI日报', '📡 AI行业洞察 - AI日报'),
     
     # ===== 介绍文本 =====
-    (r'我是 <strong>林克</strong>，沈浪的AI分身。AI洞察是沈浪让我负责的一个项目，目标是系统化追踪AI行业动态，每日/每周输出调研洞察，帮助你保持对AI行业的全局视野。覆盖大模型、AI Coding、AI应用、AI行业投融资、企业AI转型五大领域。',
+    (r'我是 <strong>AIJ</strong>，Joke的AI分身。AI洞察是Joke让我负责的一个项目，目标是系统化追踪AI行业动态，每日/每周输出调研洞察，帮助你保持对AI行业的全局视野。覆盖大模型、AI Coding、AI应用、AI行业投融资、企业AI转型五大领域。',
      'AI洞察是一个系统化追踪AI行业动态的项目，每日/每周输出调研洞察，帮助你保持对AI行业的全局视野。覆盖大模型、AI Coding、AI应用、AI行业投融资、企业AI转型五大领域。'),
     
     # ===== 简单替换（兜底） =====
-    (r'林克', 'AI洞察'),
-    (r'沈浪', ''),
+    (r'AIJ', 'AI洞察'),
+    (r'Joke', ''),
     # CodeFlicker品牌词替换（v9.6新增：防止品牌词泄露到公开版）
     (r'CodeFlicker', 'AI助手平台'),
     (r'基于CodeFlicker打造的', ''),
     (r'AI数字分身', 'AI洞察'),
-    (r'沈浪让我负责的', ''),
+    (r'Joke让我负责的', ''),
     
     # ===== 时间戳格式调整 =====
     (r'⏰ 每日8点更新', '⏰ 每日更新'),
@@ -124,7 +124,7 @@ REPLACEMENTS = [
 ]
 
 # 敏感词验证列表（脱敏后不应出现的词）
-SENSITIVE_WORDS = ['林克', '沈浪', '快手', 'Kuaishou', 'CodeFlicker']  # v9.6新增CodeFlicker
+SENSITIVE_WORDS = ['AIJ', 'Joke', '快手', 'Kuaishou', 'CodeFlicker']  # v9.6新增CodeFlicker
 
 
 def sanitize_html(content: str) -> str:
@@ -278,16 +278,16 @@ def sync_index(force: bool = False):
         return False
     
     # ⭐ v2.1: 内部版首页被污染检测（经验#55防护）
-    # 内部版 index.html 应包含「林克」字样，若不包含说明可能被脱敏版覆盖
+    # 内部版 index.html 应包含「AIJ」字样，若不包含说明可能被脱敏版覆盖
     content = src.read_text(encoding="utf-8")
-    link_count = content.count('林克')
+    link_count = content.count('AIJ')
     if link_count == 0:
-        print("⚠️ [WARNING] 内部版首页中未找到'林克'字样，疑似被脱敏版覆盖！")
-        print("   请检查: grep -c '林克' index.html")
+        print("⚠️ [WARNING] 内部版首页中未找到'AIJ'字样，疑似被脱敏版覆盖！")
+        print("   请检查: grep -c 'AIJ' index.html")
         print("   如果确认是污染，从最近正确commit恢复: git checkout bcb0937 -- index.html")
         print("   继续同步（将复制当前内容）...")
     else:
-        print(f"✅ 内部版首页内容正常（林克: {link_count}处），开始脱敏同步...")
+        print(f"✅ 内部版首页内容正常（AIJ: {link_count}处），开始脱敏同步...")
     
     sanitized = sanitize_html(content)
     dst.write_text(sanitized, encoding="utf-8")
@@ -350,7 +350,7 @@ def verify_sanitization() -> tuple:
     验证 public/ 目录中是否有敏感词残留和 -v3 链接残留（v2.0新增, v2.2增强）
     
     检查项:
-    1. 敏感词残留（林克/沈浪/快手/Kuaishou）
+    1. 敏感词残留（AIJ/Joke/快手/Kuaishou）
     2. -v3.html 链接残留（public版文件名已去掉-v3后缀，链接也必须同步去掉）
     
     Returns:

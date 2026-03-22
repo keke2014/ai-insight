@@ -142,4 +142,4 @@ gemini-3.1-flash-lite-preview
 ---
 
 *最后更新: 2026-03-05*
-*整理者: 林克 AI 助手*
+*整理者: AIJ AI 助手*

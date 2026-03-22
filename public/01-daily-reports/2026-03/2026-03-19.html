@@ -6,6 +6,7 @@
     <title>AI 日报 - 2026-03-19 (v3.2)</title>
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%231A7F37'/><circle cx='16' cy='14' r='6' fill='none' stroke='white' stroke-width='2'/><path d='M12 12h8M16 10v4M10 22c0-3.3 2.7-6 6-6s6 2.7 6 6' fill='none' stroke='white' stroke-width='2' stroke-linecap='round'/></svg>">
     <style>
+<style>
         :root {
             --color-success:#059669;--color-success-light:#10B981;--color-danger:#E11D48;--color-danger-light:#FF7B72;--color-warning:#D97706;--color-info:#2563EB;--color-info-light:#54AEFF;--color-purple:#7C3AED;--color-orange:#EA580C;--color-text-primary:#1C1917;--color-text-secondary:#57534E;--color-text-muted:#78716C;--color-border:#E7E5E4;--color-border-light:#F5F5F4;--color-bg:#F8FAFB;--color-bg-card:#FFFFFF;--color-bg-table-header:#FAFAF9;--gradient-success:linear-gradient(135deg,#059669 0%,#10B981 100%);--gradient-orange:linear-gradient(135deg,#EA580C 0%,#F97316 100%);--gradient-purple:linear-gradient(135deg,#7C3AED 0%,#6D28D9 50%,#5B21B6 100%);--gradient-china:linear-gradient(135deg,#DC2626 0%,#EF4444 100%);--shadow-card:0 2px 8px rgba(31,35,40,.06),0 1px 2px rgba(31,35,40,.04);--radius-sm:6px;--radius-md:10px;--radius-lg:14px;--radius-full:999px;--font-family:-apple-system,"system-ui","Segoe UI","Noto Sans SC",Helvetica,Arial,sans-serif;--transition-normal:200ms cubic-bezier(.4,0,.2,1);--content-max-width:980px;
         }
@@ -181,10 +182,173 @@
             .pi-t-analogy{border-left:none;padding-left:0;font-size:12px}
         }
     </style>
+
+/* Theme Default (Light) is already defined in :root */
+[data-theme="dark"] {
+    --color-text-primary: #F3F4F6;
+    --color-text-secondary: #D1D5DB;
+    --color-text-muted: #9CA3AF;
+    --color-border: #374151;
+    --color-border-light: #1F2937;
+    --color-bg: #111827;
+    --color-bg-card: #1F2937;
+    --color-bg-table-header: #374151;
+    --gradient-badge: linear-gradient(135deg, rgba(5,150,105,0.2) 0%, rgba(37,99,235,0.2) 100%);
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.4);
+    --shadow-card: 0 4px 10px rgba(0,0,0,0.5);
+    background: var(--color-bg);
+}
+
+[data-theme="dark"] .stat-card {
+    background: #1F2937;
+    border-color: #374151;
+}
+
+[data-theme="dark"] .tab-nav {
+    background: rgba(31, 41, 55, 0.85);
+    border-color: rgba(55, 65, 81, 0.7);
+}
+
+[data-theme="dark"] .section, [data-theme="dark"] .heat-card {
+    background: #1F2937;
+    border-color: #374151;
+}
+
+[data-theme="dark"] .list-item, [data-theme="dark"] .content-card, [data-theme="dark"] .collapsible-header, [data-theme="dark"] .collapsible-content {
+    background: #1a2233 !important;
+    border-color: #374151;
+}
+
+[data-theme="dark"] .content-card:hover, [data-theme="dark"] .list-item:hover, [data-theme="dark"] .collapsible-header:hover {
+    background: #28354c !important;
+}
+
+[data-theme="dark"] .tracking-table th {
+    background: #374151;
+    color: #D1D5DB;
+}
+
+[data-theme="dark"] .tracking-table td {
+    border-color: #374151;
+}
+
+/* Theme Switcher Styles */
+.theme-switcher-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    background: var(--color-bg-table-header);
+    border: 1px solid var(--color-border-light);
+    border-radius: var(--radius-full);
+    padding: 2px;
+    box-shadow: var(--shadow-sm);
+    z-index: 100;
+}
+.theme-switcher-btn {
+    border: none;
+    background: transparent;
+    padding: 6px 10px;
+    border-radius: var(--radius-full);
+    cursor: pointer;
+    font-size: 14px;
+    color: var(--color-text-muted);
+    transition: all 0.2s;
+}
+.theme-switcher-btn.active {
+    background: var(--color-bg-card);
+    color: var(--color-text-primary);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+@media (max-width: 600px) {
+    .theme-switcher-container {
+        top: 10px;
+        right: 10px;
+        transform: scale(0.85);
+        transform-origin: top right;
+    }
+}
+
+
+
+/* Search UI Styles - Redesigned */
+.search-container { position: relative; margin: 0 auto 24px auto; width: 600px; max-width: 90%; z-index: 50; }
+.search-input { display: block; background: var(--color-bg); border: 2px solid var(--color-border); color: var(--color-text-primary); padding: 12px 20px 12px 45px; border-radius: 30px; font-size: 16px; width: 100%; box-sizing: border-box; box-shadow: var(--shadow-sm); transition: all 0.3s ease; }
+.search-input:focus {
+    outline: none;
+    border-color: #059669;
+    box-shadow: 0 4px 12px rgba(5,150,105,0.15);
+}
+.search-icon { position: absolute; left: 18px; top: 50%; transform: translateY(-50%); font-size: 18px; color: var(--color-text-muted); pointer-events: none; }
+
+/* Search Modal */
+#search-modal {
+    display: none;
+    position: fixed;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 600px;
+    max-height: 70vh;
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-card, 0 10px 25px rgba(0,0,0,0.1));
+    z-index: 1000;
+    overflow-y: auto;
+    backdrop-filter: blur(10px);
+}
+#search-modal.active {
+    display: block;
+    animation: slideDown 0.2s ease-out;
+}
+@keyframes slideDown {
+    from { opacity: 0; transform: translate(-50%, -10px); }
+    to { opacity: 1; transform: translate(-50%, 0); }
+}
+.search-result-item {
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--color-border-light, #E5E7EB);
+    cursor: pointer;
+    transition: background 0.2s;
+}
+[data-theme="dark"] .search-result-item {
+    border-bottom: 1px solid var(--color-border-light);
+}
+.search-result-item:last-child {
+    border-bottom: none;
+}
+.search-result-item:hover {
+    background: var(--color-bg, #F9FAFB);
+}
+.search-result-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--color-text-primary);
+    margin-bottom: 4px;
+}
+.search-result-meta {
+    font-size: 12px;
+    color: var(--color-text-muted);
+    margin-bottom: 6px;
+}
+.search-result-highlight {
+    color: #059669;
+    font-weight: bold;
+    background: rgba(5,150,105,0.1);
+}
+
+</style>
 </head>
 <body>
     <div class="container">
         <div class="header">
+            <div class="theme-switcher-container">
+        <button class="theme-switcher-btn" id="theme-btn-light" data-theme-value="light" title="白天模式">☀️</button>
+        <button class="theme-switcher-btn" id="theme-btn-dark" data-theme-value="dark" title="夜间模式">🌙</button>
+        <button class="theme-switcher-btn" id="theme-btn-system" data-theme-value="system" title="跟随系统">💻</button>
+    </div>
             <div class="header-badge">📡 AI行业洞察项目 - AI日报</div>
             <div class="header-title">AI 日报 <span class="version-badge">v3.2</span></div>
             <div class="header-date">2026年3月19日 周四 | 五大板块：大模型 · AI Coding · AI应用 · AI行业 · 企业转型</div>
@@ -758,6 +922,7 @@
     </div>
 
     <script>
+<script>
         document.querySelectorAll('.tab-btn').forEach(btn => {
             btn.addEventListener('click', () => {
                 document.querySelectorAll('.tab-btn').forEach(b => b.setAttribute('aria-selected', 'false'));
@@ -766,6 +931,140 @@
                 document.getElementById(btn.dataset.tab).classList.add('active');
             });
         });
-    </script>
+    
+// Theme Switcher Logic
+function getSavedTheme() { return localStorage.getItem('theme') || 'system'; }
+function applyTheme(theme) {
+    if (theme === 'dark' || (theme === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+    } else {
+        document.documentElement.removeAttribute('data-theme');
+    }
+    document.querySelectorAll('.theme-switcher-btn').forEach(btn => btn.classList.remove('active'));
+    let activeBtn = document.getElementById('theme-btn-' + theme);
+    if(activeBtn) activeBtn.classList.add('active');
+}
+window.setTheme = function(theme) {
+    localStorage.setItem('theme', theme);
+    applyTheme(theme);
+};
+
+// Bind theme switcher events
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.theme-switcher-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const theme = btn.getAttribute('data-theme-value');
+            window.setTheme(theme);
+        });
+    });
+    applyTheme(getSavedTheme());
+});
+
+// Init UI
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', () => applyTheme(getSavedTheme()));
+} else {
+    applyTheme(getSavedTheme());
+}
+// Listeners
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+    if(getSavedTheme() === 'system') applyTheme('system');
+});
+
+
+// Search Feature Logic
+let searchIndex = [];
+let isSearchLoaded = false;
+
+window.loadSearchIndex = async function() {
+    if (isSearchLoaded) return;
+    try {
+        let p = "search_index.json";
+        if (window.location.pathname.includes("/01-daily-reports/")) {
+            p = "../../search_index.json";
+        }
+        const res = await fetch(p);
+        searchIndex = await res.json();
+        isSearchLoaded = true;
+    } catch (e) {
+        console.error("Failed to load search index", e);
+    }
+};
+
+window.renderSearchResults = function(query) {
+    const modal = document.getElementById("search-modal");
+    if (!query.trim()) {
+        modal.classList.remove("active");
+        return;
+    }
+    
+    query = query.toLowerCase();
+    const results = searchIndex.filter(item => 
+        (item.title && item.title.toLowerCase().includes(query)) ||
+        (item.content && item.content.toLowerCase().includes(query))
+    ).slice(0, 15);
+    
+    if (results.length === 0) {
+        modal.innerHTML = '<div style="padding:20px;text-align:center;color:var(--color-text-muted)">无匹配结果</div>';
+    } else {
+        const regex = new RegExp(`(${query.replace(/[-\/\^$*+?.()|[\]{}]/g, '\$&')})`, "gi");
+        const highlight = (text) => text.replace(regex, '<span class="search-result-highlight">$1</span>');
+        
+        const prefix = window.location.pathname.includes("/01-daily-reports/") ? "../../" : "";
+        
+        let html = "";
+        results.forEach(r => {
+            const titleSnippet = highlight(r.title || "无标题");
+            let contentSnippet = r.content || "";
+            const matchIndex = contentSnippet.toLowerCase().indexOf(query);
+            if(matchIndex > -1) {
+                let start = Math.max(0, matchIndex - 30);
+                contentSnippet = (start > 0 ? "..." : "") + contentSnippet.substring(start, start + 80) + "...";
+            } else {
+                contentSnippet = contentSnippet.substring(0, 80) + "...";
+            }
+            contentSnippet = highlight(contentSnippet);
+            
+            html += `<div class="search-result-item" onclick="window.location.href='${prefix}${r.url}'">
+                <div class="search-result-title">${titleSnippet}</div>
+                <div class="search-result-meta"><span class="badge ${r.type === '摘要' ? 'blue' : (r.type === '深度' ? 'purple' : 'green')}" style="padding:2px 6px; border-radius:4px; font-size:11px;">${r.type}</span> ${r.date}</div>
+                <div style="font-size: 13px; color: var(--color-text-secondary); line-height: 1.4;">${contentSnippet}</div>
+            </div>`;
+        });
+        modal.innerHTML = html;
+    }
+    modal.classList.add("active");
+};
+
+// Init Search Events
+document.addEventListener("DOMContentLoaded", () => {
+    if (!document.getElementById("search-modal")) {
+        const modal = document.createElement("div");
+        modal.id = "search-modal";
+        document.body.appendChild(modal);
+        
+        document.addEventListener("click", (e) => {
+            if (!modal.contains(e.target) && e.target.id !== "search-input") {
+                modal.classList.remove("active");
+            }
+        });
+    }
+
+    const searchInputBox = document.getElementById("search-input");
+    if (searchInputBox) {
+        searchInputBox.addEventListener("focus", window.loadSearchIndex);
+        
+        let debounceTimer;
+        searchInputBox.addEventListener("input", (e) => {
+            clearTimeout(debounceTimer);
+            debounceTimer = setTimeout(() => {
+                if(isSearchLoaded) window.renderSearchResults(e.target.value);
+            }, 300);
+        });
+    }
+});
+
+</script>
+</script>
 </body>
 </html>
