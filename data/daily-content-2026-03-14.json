@@ -1,0 +1,488 @@
+{
+  "coverage": {
+    "overseas": 9,
+    "china": 7
+  },
+  "overview": [
+    {
+      "icon": "🧠",
+      "label": "大模型",
+      "headline": "Gemini Embedding 2多模态+DeepSeek V4国产芯片适配+Nemotron 3千亿MoE",
+      "text": "Google发布原生多模态嵌入模型延迟降70%；DeepSeek V4即将发布适配华为昇腾(小红书热议已悄然上线)；英伟达GTC前夕推出Nemotron 3 Super千亿参数企业级模型"
+    },
+    {
+      "icon": "⌨️",
+      "label": "AI Coding",
+      "headline": "Vibe Coding方法论全网爆发+NanoClaw安全沙箱+systemd拥抱AI Agent",
+      "text": "小红书Vibe Coding话题6500+收藏引爆AI原生编程浪潮；NanoClaw+Docker打造企业Agent沙箱；Linux核心组件systemd正式新增AGENTS.md拥抱AI编程助手"
+    },
+    {
+      "icon": "📱",
+      "label": "AI 应用",
+      "headline": "腾讯混元涨价5倍(算力紧缺)+光明日报系统分析OpenClaw+BuzzFeed濒临破产",
+      "text": "AI Agent爆发致腾讯云大模型API涨价最高5倍；新华社首次系统性分析AI Agent走红现象；BuzzFeed AI转型三年股价从$15跌至$0.7"
+    },
+    {
+      "icon": "🏭",
+      "label": "AI 行业",
+      "headline": "GTC 2026倒计时2天+USC突破AI自我学习+七巨头全线回调",
+      "text": "GTC周末开幕Feynman芯片揭晓(小红书312赞期待)；USC研究AI自我学习成功率从39%跃升至96%；美股七巨头全部进入技术性回调"
+    },
+    {
+      "icon": "🔄",
+      "label": "企业转型",
+      "label_class": "orange",
+      "headline": "华为AI基础设施+大晓开源世界模型+Intuit数据护城河",
+      "text": "华为即将发布面向中心推理与智能边缘的AI基础设施；大晓机器人开源4B参数具身世界模型Kairos 3.0；Intuit用40年数据对抗AI颠覆"
+    }
+  ],
+  "heat_trend": {
+    "title": "近7期日报交叉分析(3/8-3/14)",
+    "topics": [
+      {
+        "name": "NVIDIA GTC 2026倒计时",
+        "score": 10,
+        "days": 4,
+        "trend_class": "burst",
+        "trend_label": "⚡ 明日爆发",
+        "signal": "距Jensen Huang主题演讲仅2天，Feynman芯片+Nemotron 3 Super+Nscale投资全面铺垫，小红书312赞热帖讨论核心看点"
+      },
+      {
+        "name": "Vibe Coding方法论",
+        "score": 10,
+        "days": 7,
+        "trend_class": "burst",
+        "trend_label": "⚡ 现象级爆发",
+        "signal": "小红书单帖3794赞6516收藏引爆中国开发者圈，AI原生编程从概念走向实战方法论"
+      },
+      {
+        "name": "AI Agent安全与治理",
+        "score": 9,
+        "days": 10,
+        "trend_class": "up",
+        "trend_label": "📈 持续升级",
+        "signal": "NanoClaw+Docker沙箱+光明日报分析OpenClaw+微软Agent 365+Execwall防火墙——安全基础设施全面铺开"
+      },
+      {
+        "name": "AI Agent算力供需失衡",
+        "score": 9,
+        "days": 3,
+        "trend_class": "burst",
+        "trend_label": "⚡ 突发信号",
+        "signal": "腾讯云混元API涨价最高5倍+Digg因AI爬虫裁员——Agent爆发的隐性成本浮出水面"
+      },
+      {
+        "name": "国产AI生态闭环",
+        "score": 9,
+        "days": 5,
+        "trend_class": "up",
+        "trend_label": "📈 持续热度",
+        "signal": "DeepSeek V4适配国产芯片+华为AI基础设施+大晓开源世界模型——从模型到芯片到应用的国产闭环加速"
+      },
+      {
+        "name": "美股科技股回调",
+        "score": 8,
+        "days": 2,
+        "trend_class": "burst",
+        "trend_label": "⚡ 突发事件",
+        "signal": "七巨头全部进入技术性回调区间，Intuit市值蒸发42%，市场对AI投资回报预期重新校准"
+      }
+    ],
+    "summary": "本期最强信号是<strong>Vibe Coding方法论全网爆发</strong>——小红书单帖6500+收藏，AI原生编程从概念走向实战。<strong>GTC 2026明日开幕</strong>——Nemotron 3 Super已提前发布，Feynman芯片蓄势待发。<strong>AI Agent算力供需失衡</strong>首次浮出水面——腾讯云混元涨价5倍，Agent爆发的隐性成本开始传导。"
+  },
+  "tabs": [
+    {
+      "news": {
+        "overseas": [
+          {
+            "tag": "hot",
+            "title": "Google发布Gemini Embedding 2：首个原生多模态嵌入模型，延迟降低70%",
+            "url": "https://venturebeat.com/data-infrastructure/googles-new-gemini-embedding-model-with-native-multimodal-support-cuts-latency-up-to-70/",
+            "source": "VentureBeat · 3月13日",
+            "details": {
+              "finding": "Google发布Gemini Embedding 2，首次支持文本、图像、视频、音频的原生多模态嵌入，延迟最高降低70%",
+              "highlight": "原生多模态嵌入 | 文本+图像+视频+音频 | 延迟降70% | 替代CLIP方案",
+              "impact": "多模态AI搜索和RAG进入原生支持时代，此前需要多个独立模型拼接"
+            }
+          },
+          {
+            "tag": "new",
+            "title": "英伟达GTC前夕发布Nemotron 3 Super：1200亿参数MoE企业级多智能体模型",
+            "url": "https://blogs.nvidia.com/blog/nemotron-3-super-agentic-ai/",
+            "wx_url": "https://mp.weixin.qq.com/s?src=11&timestamp=1773531491&ver=6599&signature=3J7mYZiltUJ4JpVjhtJcH13JDaYtpyS0YJ1kL3uKs5LylbhAIwOhkYPSNMSQwfiWFDbVpPqFcYoFpVMILyTjyZNXjP8iKjQFT4qnmmV-fiqKZQLTnNQV255oU-Kk-Vpb&new=1",
+            "source": "NVIDIA/多源 · 3月13日（微信:宇枢AGI）",
+            "details": {
+              "finding": "英伟达推出新一代开源大语言模型Nemotron 3 Super，采用混合专家架构(MoE)，总参数量达1200亿，专为企业级多智能体系统设计",
+              "highlight": "1200亿参数MoE | 推理吞吐量5倍提升 | 企业级多Agent设计",
+              "impact": "GTC前夕的重磅预热，英伟达从芯片硬件延伸到大模型软件，构建完整AI生态"
+            }
+          }
+        ],
+        "china": [
+          {
+            "tag": "hot",
+            "title": "DeepSeek V4多模态大模型即将发布，深度适配华为昇腾和寒武纪国产芯片",
+            "url": "https://tech.sina.cn/mobile/xp/2026-02-28/detail-inhpkhwh2846004.d.html?vt=4",
+            "xhs_url": "https://www.xiaohongshu.com/explore/69a5663f000000002303bc2d",
+            "source": "硅基流动/多源 · 3月13日（小红书）| 93赞77评论",
+            "details": {
+              "finding": "DeepSeek即将发布V4多模态大模型，首次深度适配华为昇腾和寒武纪国产芯片。小红书多个热帖讨论V4进展，有用户称'疑似已在官方平台悄然上线'",
+              "highlight": "多模态能力 | 国产芯片适配 | 小红书热度爆发 | V3.1-Terminus已上线",
+              "impact": "中国顶级开源模型首次原生适配国产AI芯片，国产AI生态闭环加速"
+            }
+          }
+        ]
+      },
+      "deep_focus": {
+        "title": "东西方多模态竞速：Google Embedding 2 + DeepSeek V4 + Nemotron 3三线并进",
+        "paragraphs": [
+          "一天之内三大多模态进展齐发：Google发布首个原生多模态嵌入模型（延迟降70%），DeepSeek V4多模态大模型即将发布且适配国产芯片（小红书上多个帖子讨论V4已悄然上线），英伟达在GTC前夕推出1200亿参数的Nemotron 3 Super。",
+          "值得注意的是英伟达的角色转变：从纯芯片公司到同时提供大模型的'全栈AI供应商'。Nemotron 3 Super专为多Agent系统设计，推理吞吐量提升5倍——这显然是冲着Agent时代的基础设施需求来的。",
+          "DeepSeek V4在小红书上的热度也值得关注：93赞77条评论的讨论帖里，用户们在分享实测体验，有人称V4'可能已在平台悄然上线'。这种社区热度是官方发布前的重要信号，说明开发者社区已经开始为V4做准备。"
+        ],
+        "takeaway": "多模态AI三线竞速——Google做嵌入、DeepSeek做模型、英伟达做全栈，2026年是多模态AI基础设施全面铺开的一年。"
+      },
+      "pattern_insight_html": "\n            <div class=\"pi-card\">\n                <div class=\"pi-header\">\n                    <span class=\"pi-badge\">🔮 规律洞察</span>\n                    <span class=\"pi-title\">芯片公司的全栈进化：硬件→软件→生态</span>\n                </div>\n                <div class=\"pi-row\">\n                    <span class=\"pi-row-label l2\">本质</span>\n                    <div class=\"pi-row-content\"><strong>当技术平台足够成熟时，硬件公司必然向上游软件和生态延伸</strong>——因为单纯卖硬件的毛利会被竞争者压缩，只有掌握软件生态才能锁定客户。</div>\n                </div>\n                <div class=\"pi-row\">\n                    <span class=\"pi-row-label\">进化序列</span>\n                    <div class=\"pi-row-content\">\n                        <div class=\"pi-evo\">\n                            <div class=\"pi-evo-step\"><span class=\"pi-evo-tag\">1.0</span><span class=\"pi-evo-text\">卖芯片</span></div>\n                            <span class=\"pi-evo-arrow\">→</span>\n                            <div class=\"pi-evo-step\"><span class=\"pi-evo-tag\">2.0</span><span class=\"pi-evo-text\">芯片+CUDA</span></div>\n                            <span class=\"pi-evo-arrow\">→</span>\n                            <div class=\"pi-evo-step active\"><span class=\"pi-evo-tag\">3.0</span><span class=\"pi-evo-text\">芯片+模型+平台</span></div>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"pi-table\">\n                    <div class=\"pi-t-head\"><span>阶段</span><span>现实验证</span><span>类比</span></div>\n                    <div class=\"pi-t-section verified\"><span class=\"pi-t-section-tag\">✅ 已验证</span></div>\n                    <div class=\"pi-t-row\"><span class=\"pi-t-rule\">Intel x86→平台</span><span class=\"pi-t-reality\">从卖CPU到Intel Inside到Wintel联盟再到自建代工厂</span><span class=\"pi-t-analogy\">像卖面粉的开了连锁面包店</span></div>\n                    <div class=\"pi-t-row\"><span class=\"pi-t-rule\">Apple芯片→生态</span><span class=\"pi-t-reality\">从用Intel芯片到M系列自研+macOS+App Store闭环</span><span class=\"pi-t-analogy\">像从租房变成自己盖大楼当房东</span></div>\n                    <div class=\"pi-t-divider\"></div>\n                    <div class=\"pi-t-section current\"><span class=\"pi-t-section-tag\">📍 当前</span></div>\n                    <div class=\"pi-t-row\"><span class=\"pi-t-rule\">NVIDIA全栈化</span><span class=\"pi-t-reality\"><strong>Nemotron 3 Super(1200亿参数)</strong>+CUDA+NIM微服务+Nscale投资=从卖GPU到提供完整AI解决方案</span><span class=\"pi-t-analogy\">像卖发动机的开始造整车还建加油站</span></div>\n                    <div class=\"pi-t-divider\"></div>\n                    <div class=\"pi-t-section projected\"><span class=\"pi-t-section-tag\">🔮 趋势推演</span></div>\n                    <div class=\"pi-t-row projected\"><span class=\"pi-t-rule\">3.0</span><span class=\"pi-t-reality\">6-12个月内NVIDIA将成为'AI操作系统'级公司，GTC 2026是关键验证窗口</span><span class=\"pi-t-analogy\">像微软从DOS到Windows——从工具变成平台</span></div>\n                </div>\n                <div class=\"pi-confidence\">📐 置信度: 高 · 验证窗口: GTC 2026主题演讲(2天后) · 信号: Nemotron模型的企业采用率和NIM的付费用户增长</div>\n            </div>"
+    },
+    {
+      "news": {
+        "overseas": [
+          {
+            "tag": "hot",
+            "title": "NanoClaw与Docker合作：让沙箱成为企业部署AI Agent的最安全方式",
+            "url": "https://venturebeat.com/infrastructure/nanoclaw-and-docker-partner-to-make-sandboxes-the-safest-way-for-enterprises",
+            "source": "VentureBeat · 3月13日",
+            "details": {
+              "finding": "NanoClaw与Docker达成战略合作，将Agent运行在受限沙箱环境中，趋势从单一中央AI系统转向多个有边界的Agent分布部署",
+              "highlight": "多Agent分布式部署 | 沙箱隔离 | 企业级安全保障",
+              "impact": "AI Agent安全部署从理论走向工程实践"
+            }
+          },
+          {
+            "tag": "new",
+            "title": "Linux核心组件systemd正式新增AGENTS.md：开源基础设施拥抱AI编程助手",
+            "url": "https://github.com/systemd/systemd/blob/main/AGENTS.md",
+            "source": "GitHub/多源 · 3月13日（微信）",
+            "details": {
+              "finding": "systemd 260-rc3版本新增AGENTS.md文档，专门指导AI编程助手如何理解和贡献代码库，包含架构概述、开发工作流和编码规范",
+              "highlight": "开源核心组件 | AI Agent适配文档 | 降低AI贡献门槛",
+              "impact": "开源基础设施项目正式拥抱AI编程助手时代，将引领更多开源项目效仿"
+            }
+          }
+        ],
+        "china": [
+          {
+            "tag": "hot",
+            "title": "Vibe Coding方法论全网爆发：小红书单帖6500+收藏，AI原生编程从概念走向实战",
+            "url": "https://cloud.google.com/discover/what-is-vibe-coding?hl=zh-CN",
+            "xhs_url": "https://www.xiaohongshu.com/explore/69a2c330000000001a0300c9",
+            "source": "36氪 · 3月13日（小红书）| 3794赞6516收藏",
+            "details": {
+              "finding": "由Andrej Karpathy提出的'Vibe Coding'方法论在中国开发者圈引爆：小红书上单帖获3794赞、6516收藏，多位开发者分享AI全流程开发工作流，从'写代码'进化为'描述需求让AI生成'",
+              "highlight": "3794赞6516收藏 | AI全流程开发 | 多款工具对比 | 实战工作流分享",
+              "impact": "AI编程不再是'辅助工具'而是'开发范式'——开发者角色从'码农'转向'AI编程指挥官'"
+            }
+          }
+        ]
+      },
+      "deep_focus": {
+        "title": "从写代码到指挥AI写代码：Vibe Coding + systemd AGENTS.md 标志编程范式转变",
+        "paragraphs": [
+          "今天最让人兴奋的不是某个产品发布，而是一个趋势的临界点：AI编程正从'工具辅助'阶段进入'范式转变'阶段。小红书上Vibe Coding话题的爆发式传播（单帖3794赞、6516收藏）说明，大量中国开发者正在从'用AI帮我补全代码'转向'我描述需求，AI负责全部实现'。",
+          "与此同时，Linux核心组件systemd正式新增AGENTS.md——这不是一个小事。systemd是Linux生态的基石级项目，它主动为AI编程助手准备适配文档，意味着开源社区正式承认：AI Agent将成为代码贡献者。这和NanoClaw+Docker为Agent准备安全沙箱的逻辑一脉相承——基础设施在为AI Agent'做公民'铺路。",
+          "从小红书开发者的实战分享来看，Vibe Coding的核心不在于某个工具（Cursor/Claude Code），而在于方法论——如何构建Prompt、如何拆解需求、如何验证AI输出。这说明AI编程的竞争焦点正在从'工具功能'转向'使用方法论'。"
+        ],
+        "takeaway": "编程的范式正在发生深刻转变——从'人写代码，AI辅助'到'人描述需求，AI实现'，Vibe Coding是这个转变的标志性概念。"
+      }
+    },
+    {
+      "news": {
+        "overseas": [
+          {
+            "tag": "new",
+            "title": "Anthropic推出Claude Marketplace：集中式工具市场集成Replit、GitLab、Harvey",
+            "url": "https://venturebeat.com/agents/anthropics-new-claude-marketplace-is-a-centralized-hub-for-claude-powered-tools/",
+            "source": "VentureBeat · 3月13日",
+            "details": {
+              "finding": "Anthropic推出Claude Marketplace，提供Replit、GitLab、Harvey等Claude驱动工具的集中式市场",
+              "impact": "AI工具生态从分散走向集中，Anthropic构建类App Store模式"
+            }
+          },
+          {
+            "tag": "trend",
+            "title": "BuzzFeed AI转型三年濒临破产：股价从$15跌至$0.7，AI不是万能药",
+            "url": "https://nz.finance.yahoo.com/news/buzzfeed-nearing-bankruptcy-disastrous-turn-180842354.html",
+            "wx_url": "https://mp.weixin.qq.com/s?src=11&timestamp=1773531567&ver=6599&signature=-P7iIk*UZoL765YQcOTqVWAQmx9JOY4eoIx-0AAr*xlnawnq*wL72avjLRucasx*vvPCXflFIDV9Uk-NKji3ut5Y9*2m-VC4yh0-F2I5taUixY1VY4uEALbXsFuZK9KF&new=1",
+            "source": "多源 · 3月14日（微信:AI硅基笔记）",
+            "details": {
+              "finding": "BuzzFeed 2023年全面转向AI内容生产，三年后净亏损5730万美元，股价从$15跌至$0.7，AI生成内容被评为'令人失望、草率且重复'",
+              "highlight": "股价跌97% | 净亏损$57.3M | 品牌声誉受损 | CEO仍计划推新AI应用",
+              "impact": "媒体行业AI转型的反面教材——AI降成本≠AI创价值"
+            }
+          }
+        ],
+        "china": [
+          {
+            "tag": "hot",
+            "title": "光明日报：OpenClaw走红凸显AI智能体潜力与风险",
+            "url": "https://news.gmw.cn/2026-03/14/content_38647144.htm",
+            "source": "光明日报/新华社 · 3月14日",
+            "details": {
+              "finding": "新华社发文全面分析OpenClaw走红现象，技术潜力获认可但安全性可靠性存隐忧",
+              "highlight": "GitHub 30万+ Star | ClawJacked安全漏洞 | 提示注入攻击未解决",
+              "impact": "官媒首次系统性分析AI Agent产品，标志AI Agent进入主流公众视野"
+            }
+          },
+          {
+            "tag": "hot",
+            "title": "腾讯云混元大模型API涨价最高5倍：AI Agent爆发导致算力紧缺",
+            "url": "https://m.10jqka.com.cn/20260312/c675232209.shtml",
+            "source": "腾讯云/多源 · 3月14日（微信）",
+            "details": {
+              "finding": "以OpenClaw为代表的AI Agent生态火爆，大模型调用量激增导致算力极度紧张，腾讯云宣布混元系列大模型API价格大幅上调，最高涨幅接近5倍",
+              "highlight": "涨价最高5倍 | Agent调用量激增 | 算力资源紧张 | 中小企业成本压力",
+              "impact": "AI Agent爆发的隐性成本首次浮出水面——算力供需失衡将重塑行业竞争格局"
+            }
+          }
+        ]
+      },
+      "deep_focus": {
+        "title": "AI应用的冰火两重天：Agent算力紧缺 vs BuzzFeed濒临破产",
+        "paragraphs": [
+          "今天两条新闻构成了AI应用领域的完美对照组：一边是腾讯云因AI Agent爆发不得不涨价5倍（需求太旺），一边是BuzzFeed因AI内容策略失败股价跌去97%（用错了方向）。同样是拥抱AI，一个供不应求，一个走向破产。",
+          "关键区别在于：AI Agent是'让AI做事'（创造新能力），BuzzFeed是'让AI省钱'（替代人类内容创作者）。前者创造了增量价值，后者只是成本替代——而成本替代策略在内容行业注定失败，因为内容的核心竞争力恰恰是人类的创意和判断力。",
+          "腾讯云涨价5倍这个信号值得高度关注：当算力成本传导到开发者端，将催生两个方向——一是算力效率优化（如DeepSeek的训练成本优势将成为真正的竞争壁垒），二是Agent使用场景的'ROI筛选'（只有真正高价值的Agent会活下来）。"
+        ],
+        "takeaway": "AI Agent的隐性成本浮出水面——算力涨价5倍将加速行业洗牌，只有真正创造增量价值的AI应用才能存活。"
+      },
+      "theme": "china-theme",
+      "pattern_insight_html": "\n            <div class=\"pi-card\">\n                <div class=\"pi-header\">\n                    <span class=\"pi-badge\">🔮 规律洞察</span>\n                    <span class=\"pi-title\">技术爆发周期的隐性成本传导规律</span>\n                </div>\n                <div class=\"pi-row\">\n                    <span class=\"pi-row-label l2\">本质</span>\n                    <div class=\"pi-row-content\"><strong>每次技术爆发都会经历'免费午餐→成本传导→效率淘汰'三阶段</strong>——初期低价获客、中期资源紧缺涨价、后期只有高效率玩家存活。</div>\n                </div>\n                <div class=\"pi-row\">\n                    <span class=\"pi-row-label\">进化序列</span>\n                    <div class=\"pi-row-content\">\n                        <div class=\"pi-evo\">\n                            <div class=\"pi-evo-step\"><span class=\"pi-evo-tag\">1.0</span><span class=\"pi-evo-text\">免费午餐</span></div>\n                            <span class=\"pi-evo-arrow\">→</span>\n                            <div class=\"pi-evo-step active\"><span class=\"pi-evo-tag\">2.0</span><span class=\"pi-evo-text\">成本传导</span></div>\n                            <span class=\"pi-evo-arrow\">→</span>\n                            <div class=\"pi-evo-step future\"><span class=\"pi-evo-tag\">3.0</span><span class=\"pi-evo-text\">效率淘汰</span></div>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"pi-table\">\n                    <div class=\"pi-t-head\"><span>阶段</span><span>现实验证</span><span>类比</span></div>\n                    <div class=\"pi-t-section verified\"><span class=\"pi-t-section-tag\">✅ 已验证</span></div>\n                    <div class=\"pi-t-row\"><span class=\"pi-t-rule\">云计算</span><span class=\"pi-t-reality\">2010s AWS免费层→资源紧缺涨价→只有弹性架构的公司控制住成本</span><span class=\"pi-t-analogy\">像超市刚开业打折→客流太大涨价→只有会员持续购买</span></div>\n                    <div class=\"pi-t-row\"><span class=\"pi-t-rule\">移动互联网</span><span class=\"pi-t-reality\">2012年获客成本几毛→2016年涨至几十元→只有高LTV产品活下来</span><span class=\"pi-t-analogy\">像早市地摊免租→商圈成型租金飙升→只有赚钱的店能续租</span></div>\n                    <div class=\"pi-t-divider\"></div>\n                    <div class=\"pi-t-section current\"><span class=\"pi-t-section-tag\">📍 当前</span></div>\n                    <div class=\"pi-t-row\"><span class=\"pi-t-rule\">AI Agent</span><span class=\"pi-t-reality\"><strong>腾讯云混元API涨价5倍</strong>+BuzzFeed用错AI方向破产——免费午餐期结束，成本传导开始</span><span class=\"pi-t-analogy\">像共享单车从免费骑→涨到3块——不赚钱的玩法淘汰</span></div>\n                    <div class=\"pi-t-divider\"></div>\n                    <div class=\"pi-t-section projected\"><span class=\"pi-t-section-tag\">🔮 趋势推演</span></div>\n                    <div class=\"pi-t-row projected\"><span class=\"pi-t-rule\">3.0</span><span class=\"pi-t-reality\">3-6个月内，更多云厂商跟进涨价，低效AI应用将被淘汰，'算力效率'成为新的竞争维度</span><span class=\"pi-t-analogy\">像电商大战后——补贴停止，只有有正向unit economics的活下来</span></div>\n                </div>\n                <div class=\"pi-confidence\">📐 置信度: 高 · 验证窗口: 3个月 · 信号: 阿里云/百度智能云是否跟进涨价</div>\n            </div>"
+    },
+    {
+      "news": {
+        "overseas": [
+          {
+            "tag": "hot",
+            "title": "GTC 2026本周末开幕：Feynman芯片将揭晓，AI行业年度盛会",
+            "url": "https://blogs.nvidia.com/blog/gtc-2026-news/",
+            "xhs_url": "https://www.xiaohongshu.com/explore/69b01725000000000601e31b",
+            "source": "NVIDIA · 3月16-19日（小红书）| 312赞347收藏",
+            "details": {
+              "finding": "NVIDIA GTC 2026将于3月16-19日在圣何塞举办，预计揭晓新一代Feynman芯片平台。小红书上多篇热帖讨论核心看点，最高312赞347收藏",
+              "highlight": "Feynman芯片 | Jensen Huang主题演讲 | 小红书散户高度关注",
+              "impact": "GTC将是今年AI行业最重要的产品发布窗口，距离仅2天"
+            }
+          },
+          {
+            "tag": "new",
+            "title": "USC突破性研究：AI可以自我学习，GPT-5在冷门语言成功率从39%跃升至96%",
+            "url": "https://www.miragenews.com/usc-ai-masters-unknown-through-self-learning-1634490/",
+            "source": "USC/多源 · 3月14日",
+            "details": {
+              "finding": "南加州大学研究团队证明AI可通过反馈循环实现自我学习——让GPT-5学习仅有2000个代码仓库的冷门语言Idris(对比Python的2400万个)，成功率从39%飙升至96%",
+              "highlight": "39%→96%成功率 | 无需领域专家 | 突破数据瓶颈 | 通用性潜力",
+              "impact": "颠覆'AI能力受限于训练数据'的传统认知，为低资源领域AI应用开辟新路径"
+            }
+          }
+        ],
+        "china": [
+          {
+            "tag": "trend",
+            "title": "美股\"七巨头\"全部进入技术性回调区间",
+            "url": "https://biz.finance.sina.com.cn/usstock/usstock_news.php?symbol=MSFT",
+            "source": "智通财经/新浪 · 3月14日",
+            "details": {
+              "finding": "微软、苹果、谷歌、亚马逊、Meta、英伟达、特斯拉七大科技巨头股价全部跌入技术性回调区间",
+              "impact": "市场对AI投资回报预期正在重新校准"
+            }
+          }
+        ]
+      },
+      "deep_focus": {
+        "title": "AI能力跃迁：USC自我学习突破 + GTC验证窗口 + 市场挤泡沫",
+        "paragraphs": [
+          "USC的研究结果可能是今天最容易被低估的新闻：AI不再局限于训练数据能学到什么——它可以通过反馈循环自主学习。在Idris这样只有2000个代码仓库的冷门语言上，GPT-5的成功率从39%跃升到96%，更关键的是研究者本身不懂Idris——AI在没有人类专家指导的情况下自己学会了。",
+          "这个发现与GTC 2026形成呼应：如果AI能够自我学习，那么NVIDIA的算力需求不是'泡沫'，而是'刚需'。市场上七巨头全线回调，本质是投资者在问'AI投入能否变现？'GTC将给出阶段性答案。小红书上312赞的热帖讨论GTC核心看点，说明不只是华尔街在关注，中国的散户和开发者也在密切追踪。",
+          "把三条新闻串起来看：AI自我学习能力突破(能力端)+GTC新硬件发布(供给端)+市场回调(估值端)——技术在加速，市场在降温，这恰恰是'挤泡沫后真正增长'的前兆。"
+        ],
+        "takeaway": "USC研究证明AI可以自我学习——如果这被工业界验证，将是AI能力的第二次跃迁，GTC是关键验证窗口。"
+      }
+    },
+    {
+      "news": {
+        "overseas": [
+          {
+            "tag": "trend",
+            "title": "Intuit押注40年小企业数据对抗\"SaaS末日\"：AI颠覆已蒸发42%市值",
+            "url": "https://venturebeat.com/agents/intuit-is-betting-40-years-of-small-business-data-can-beat-the-saaspocalypse/",
+            "source": "VentureBeat · 3月13日",
+            "details": {
+              "finding": "Intuit面对AI颠覆已蒸发42%市值(约560亿美元)，正押注40年积累的小企业财务数据作为AI时代护城河",
+              "highlight": "市值蒸发42% | 560亿美元 | 40年数据积累 | SaaS末日",
+              "impact": "传统SaaS公司面对AI原生竞争者的典型应对策略——以独有数据构建壁垒"
+            }
+          }
+        ],
+        "china": [
+          {
+            "tag": "hot",
+            "title": "华为即将发布新一代AI数据基础设施：聚焦中心推理与智能边缘",
+            "url": "https://www.taibo.cn/newsflashes/30829980",
+            "source": "泰伯网 · 3月13日",
+            "details": {
+              "finding": "华为计划近期发布新一代AI数据基础设施，聚焦中心推理与智能边缘两大场景",
+              "impact": "华为加速布局AI基础设施服务化，面向企业AI落地提供端到端方案"
+            }
+          },
+          {
+            "tag": "new",
+            "title": "大晓机器人开源世界模型Kairos 3.0-4B：4B参数实现具身世界模型能力",
+            "url": "https://www.sensetime.com/cn/news-detail/51170557?categoryId=72",
+            "source": "GitHub/多源 · 3月13日（微信）",
+            "details": {
+              "finding": "大晓机器人开源'开悟世界模型'Kairos 3.0-4B系列，仅4B参数实现主流具身世界模型能力，可在终端设备1:1.5实时推理",
+              "highlight": "4B参数 | 具身原生 | 终端实时推理 | 开源",
+              "impact": "具身智能进入'小模型、大能力'时代，终端设备可运行世界模型"
+            }
+          }
+        ]
+      },
+      "deep_focus": {
+        "title": "企业AI三条路线：华为基础设施 vs Intuit数据护城河 vs 大晓具身智能",
+        "paragraphs": [
+          "企业转型板块今天出现了三种截然不同的AI路线：华为从基础设施切入（中心推理+智能边缘），Intuit用40年独有数据构建壁垒（数据护城河），大晓机器人则开源了4B参数的具身世界模型（让机器人理解物理世界）。",
+          "大晓机器人的Kairos 3.0是今天的一个亮点：仅4B参数就实现了主流具身世界模型的能力，且能在终端设备上1:1.5实时推理。这意味着'世界模型'不再需要庞大的算力——一个机器人可以在本地理解物理世界。这和USC的AI自我学习研究遥相呼应：AI的能力不再完全取决于参数量和训练数据。",
+          "三条路线的本质差异：华为卖'铲子'（AI基础设施），适合所有企业；Intuit守'金矿'（独有数据），适合有历史积累的公司；大晓走'前沿'（具身智能），开辟新市场。2026年企业AI转型已经不是'要不要做'的问题，而是'走哪条路'的战略选择。"
+        ],
+        "takeaway": "企业AI转型进入'战略分化'阶段——基础设施、数据护城河、具身智能三条路线各有适用场景，选错路比不转型更危险。"
+      },
+      "theme": "orange-theme"
+    }
+  ],
+  "data_snapshot": [
+    {
+      "metric": "Vibe Coding小红书热度",
+      "value": "3794赞/6516藏",
+      "note": "AI编程范式爆发"
+    },
+    {
+      "metric": "Gemini Embedding 2延迟",
+      "value": "降低70%",
+      "note": "首个原生多模态嵌入"
+    },
+    {
+      "metric": "腾讯混元API涨幅",
+      "value": "最高5倍",
+      "note": "Agent算力紧缺"
+    },
+    {
+      "metric": "USC AI自学成功率",
+      "value": "39%→96%",
+      "note": "突破训练数据限制"
+    },
+    {
+      "metric": "Nemotron 3参数",
+      "value": "1200亿MoE",
+      "note": "企业级多Agent设计"
+    },
+    {
+      "metric": "BuzzFeed股价",
+      "value": "$15→$0.7",
+      "note": "AI转型反面教材"
+    },
+    {
+      "metric": "GTC 2026倒计时",
+      "value": "2天",
+      "note": "3月16-19日圣何塞"
+    },
+    {
+      "metric": "Kairos 3.0参数",
+      "value": "4B (终端实时)",
+      "note": "具身世界模型开源"
+    }
+  ],
+  "watch_list": [
+    "NVIDIA GTC 2026 (3月16-19日) - Jensen Huang主题演讲+Feynman芯片+Nemotron生态揭晓",
+    "腾讯云涨价后续 - 阿里云/百度智能云是否跟进，中小开发者迁移动向",
+    "DeepSeek V4正式发布 - 国产芯片适配效果，小红书上'悄然上线'传闻是否属实",
+    "Vibe Coding方法论发展 - 是否催生新的AI编程工具和课程市场",
+    "AI Agent监管政策 - 官媒系统分析OpenClaw后的政策调研",
+    "BuzzFeed是否破产 - AI内容行业的连锁反应"
+  ],
+  "references": [
+    {
+      "title": "VentureBeat: Google Gemini Embedding 2",
+      "url": "https://venturebeat.com/data-infrastructure/googles-new-gemini-embedding-model-with-native-multimodal-support-cuts-latency-up-to-70/"
+    },
+    {
+      "title": "VentureBeat: NanoClaw+Docker",
+      "url": "https://venturebeat.com/infrastructure/nanoclaw-and-docker-partner-to-make-sandboxes-the-safest-way-for-enterprises"
+    },
+    {
+      "title": "VentureBeat: Claude Marketplace",
+      "url": "https://venturebeat.com/agents/anthropics-new-claude-marketplace-is-a-centralized-hub-for-claude-powered-tools/"
+    },
+    {
+      "title": "VentureBeat: Intuit vs SaaSpocalypse",
+      "url": "https://venturebeat.com/agents/intuit-is-betting-40-years-of-small-business-data-can-beat-the-saaspocalypse/"
+    },
+    {
+      "title": "NVIDIA GTC 2026 Live Blog",
+      "url": "https://blogs.nvidia.com/blog/gtc-2026-news/"
+    },
+    {
+      "title": "光明日报: OpenClaw走红",
+      "url": "https://news.gmw.cn/2026-03/14/content_38647144.htm"
+    },
+    {
+      "title": "泰伯网: 华为AI数据基础设施",
+      "url": "https://www.taibo.cn/newsflashes/30829980"
+    },
+    {
+      "title": "微信公众号(宇枢AGI): 英伟达最强开源AI模型登场！Nemotron 3 Super",
+      "url": "https://mp.weixin.qq.com/s?src=11&timestamp=1773531491&ver=6599&signature=3J7mYZiltUJ4JpVjhtJcH13JDaYtpyS0YJ1kL3uKs5LylbhAIwOhkYPSNMSQwfiWFDbVpPqFcYoFpVMILyTjyZNXjP8iKjQFT4qnmmV-fiqKZQLTnNQV255oU-Kk-Vpb&new=1"
+    },
+    {
+      "title": "微信公众号(AI硅基笔记): BuzzFeed因AI濒临破产",
+      "url": "https://mp.weixin.qq.com/s?src=11&timestamp=1773531567&ver=6599&signature=-P7iIk*UZoL765YQcOTqVWAQmx9JOY4eoIx-0AAr*xlnawnq*wL72avjLRucasx*vvPCXflFIDV9Uk-NKji3ut5Y9*2m-VC4yh0-F2I5taUixY1VY4uEALbXsFuZK9KF&new=1"
+    },
+    {
+      "title": "微信公众号(YKAIT): AI日报 BuzzFeed+USC研究",
+      "url": "https://mp.weixin.qq.com/s?src=11&timestamp=1773531872&ver=6599&signature=SlGTf5lQvq5p*Q3hSh3-RKYYHNqOc-ceFI21YSPpiXg4yEmPBugocKXeBt5VzLAZ3NPCi4tfjx-12wm9Hgc4rF8wjFolqkG0TefgTklL8E6IZkcjnKIANqR-yM-90TR4&new=1"
+    },
+    {
+      "title": "Google Cloud: 什么是氛围编程(Vibe Coding)？完整方法论解读",
+      "url": "https://cloud.google.com/discover/what-is-vibe-coding?hl=zh-CN"
+    },
+    {
+      "title": "EvoLink: DeepSeek V4 Release Tracker (持续更新)",
+      "url": "https://evolink.ai/blog/deepseek-v4-release-window-prep"
+    },
+    {
+      "title": "新浪科技: DeepSeek V4或于下周亮相，原生支持图片视频+适配国产芯片",
+      "url": "https://tech.sina.cn/mobile/xp/2026-02-28/detail-inhpkhwh2846004.d.html?vt=4"
+    },
+    {
+      "title": "小红书: DeepSeek与华为昇腾寒武纪合作",
+      "url": "https://www.xiaohongshu.com/explore/69a5663f000000002303bc2d"
+    },
+    {
+      "title": "小红书: AI全流程开发 Vibe Coding工作流 (3794赞6516收藏)",
+      "url": "https://www.xiaohongshu.com/explore/69a2c330000000001a0300c9"
+    },
+    {
+      "title": "小红书: 2026英伟达GTC大会核心看点 (312赞347收藏)",
+      "url": "https://www.xiaohongshu.com/explore/69b01725000000000601e31b"
+    }
+  ],
+  "meta": {
+    "date": "2026-03-14",
+    "version": "v3.4",
+    "total_items": 16,
+    "red_items": 7,
+    "yellow_items": 9,
+    "page_url": "https://xiaoxiong20260206.github.io/ai-insight/01-daily-reports/2026-03/2026-03-14-v3.html",
+    "data_sources": "Web搜索 + 微信公众号(3篇/browser_agent穿透获取真实URL) + 小红书(4个搜索维度/50+笔记)",
+    "xiaohongshu_enhancement": "新增Vibe Coding爆发信号(3794赞)、DeepSeek V4社区热度(93赞77评论)、GTC散户关注度(312赞)等社交信号数据"
+  }
+}

@@ -1,0 +1,447 @@
+{
+  "coverage": {
+    "overseas": 11,
+    "china": 5
+  },
+  "overview": [
+    {
+      "icon": "🔥",
+      "label": "今日热点",
+      "headline": "GTC 2026黄仁勋主题演讲：Vera Rubin平台7芯量产，代际飞跃",
+      "text": "NVIDIA发布Vera Rubin平台，7颗全新芯片全部量产，NVL72推理吞吐量/瓦提升10x、token成本降至Blackwell 1/10。Anthropic/OpenAI/Meta/Mistral均已采用"
+    },
+    {
+      "icon": "🤖",
+      "label": "AI Agent",
+      "headline": "NemoClaw发布：黄仁勋称OpenClaw是个人AI的操作系统",
+      "text": "NVIDIA发布NemoClaw为OpenClaw加持安全隐私，一键安装Nemotron模型+OpenShell沙箱，Agent从'能用'走向'敢用'"
+    },
+    {
+      "icon": "⌨️",
+      "label": "AI Coding",
+      "headline": "OpenShell+OpenSWE：Coding Agent安全运行时+最大规模训练框架",
+      "text": "NVIDIA发布OpenShell为Claude Code/Cursor/Codex提供进程外沙箱安全；OpenSWE开源45K环境训练SWE Agent达62.4% SWE-bench"
+    },
+    {
+      "icon": "🏭",
+      "label": "AI 行业",
+      "headline": "Anthropic成立AI安全研究所+Vera CPU+太空计算+AI原生咨询",
+      "text": "Anthropic投入实质资源研究AI风险；Vera CPU专为Agentic AI设计；太空AI基础设施启动；Teneo×Thoughtworks打造AI原生CEO咨询"
+    },
+    {
+      "icon": "🌍",
+      "label": "生态格局",
+      "headline": "四大云+80+硬件伙伴全面支持Vera Rubin",
+      "text": "AWS/Azure/GCP/OCI+CoreWeave/Nebius+Cisco/Dell/HPE/Lenovo等全面锁定Vera Rubin生态，下半年量产"
+    }
+  ],
+  "heat_trend": {
+    "title": "近7期日报交叉分析(3/11-3/17)",
+    "topics": [
+      {
+        "name": "GTC 2026黄仁勋主题演讲发布会",
+        "score": 10,
+        "days": 7,
+        "trend_class": "burst",
+        "trend_label": "⚡ 主题演讲落地",
+        "signal": "黄仁勋2小时主题演讲发布Vera Rubin平台（7芯5架构）、NemoClaw、Space Computing、Vera CPU——从预热到全面爆发，GTC 2026成为2026年AI行业首个超级事件"
+      },
+      {
+        "name": "Vera Rubin代际飞跃",
+        "score": 10,
+        "days": 2,
+        "trend_class": "burst",
+        "trend_label": "⚡ 重磅发布",
+        "signal": "7颗全新芯片全部量产，NVL72推理吞吐/瓦提升10x、token成本降至Blackwell 1/10。NVIDIA从'卖芯片'转向'卖完整超算系统'的范式转换"
+      },
+      {
+        "name": "NemoClaw+OpenClaw生态",
+        "score": 10,
+        "days": 5,
+        "trend_class": "burst",
+        "trend_label": "⚡ 正式发布",
+        "signal": "从预告到正式发布——NemoClaw一键安装为OpenClaw加持企业级安全隐私，黄仁勋称OpenClaw为'个人AI的操作系统'"
+      },
+      {
+        "name": "AI基础设施全栈化",
+        "score": 9,
+        "days": 3,
+        "trend_class": "up",
+        "trend_label": "📈 趋势确认",
+        "signal": "Vera Rubin的POD级系统+NemoClaw的软件层+Agent Toolkit的开发工具——NVIDIA完成从硬件到软件到生态的全栈布局"
+      },
+      {
+        "name": "物理AI战略成型",
+        "score": 9,
+        "days": 2,
+        "trend_class": "up",
+        "trend_label": "📈 战略兑现",
+        "signal": "Cosmos世界模型+Groot具身模型+Isaac仿真平台+Jetson Thor芯片+太空计算——物理AI从概念走向全栈产品"
+      }
+    ],
+    "summary": "本期核心事件是<strong>GTC 2026黄仁勋主题演讲</strong>——2小时内发布Vera Rubin平台（7芯量产、10x推理吞吐/瓦）、NemoClaw（OpenClaw安全加持）、太空计算等重磅产品。<strong>NVIDIA完成全栈布局</strong>：从芯片到超算到Agent平台到太空，定义AI基础设施新标准。<strong>四大云+80+伙伴</strong>全面支持，生态锁定效应形成。"
+  },
+  "tabs": [
+    {
+      "news": {
+        "overseas": [
+          {
+            "tag": "hot",
+            "title": "NVIDIA Vera Rubin平台：7芯量产5机架超算，推理吞吐/瓦提升10x",
+            "url": "https://nvidianews.nvidia.com/news/nvidia-vera-rubin-platform",
+            "source": "NVIDIA Newsroom · 3月16日",
+            "details": {
+              "finding": "NVIDIA发布Vera Rubin平台，7颗全新芯片全部量产：Rubin GPU、Vera CPU、NVLink 6、ConnectX-9、BlueField-4、Spectrum-6、Groq 3 LPU。5种机架覆盖预训练到Agent推理全场景",
+              "highlight": "7芯量产 | NVL72推理10x/瓦 | token成本1/10 | MoE训练GPU 1/4 | Groq 3 35x推理/兆瓦",
+              "impact": "NVIDIA从'卖芯片'到'卖完整超算系统'的范式转换，Anthropic/OpenAI/Meta/Mistral已采用"
+            }
+          }
+        ],
+        "china": [
+          {
+            "tag": "hot",
+            "title": "英伟达GTC 2026黄仁勋重磅发布物理AI全栈战略",
+            "url": "",
+            "source": "微信公众号(Carro庄主·内容已验证) · 3月17日 07:00",
+            "details": {
+              "finding": "国内媒体深度解读黄仁勋物理AI战略：Cosmos世界模型+Groot具身模型+Isaac仿真平台+Jetson Thor芯片",
+              "highlight": "物理AI全栈 | 世界模型 | 具身AI | 定义未来十年",
+              "impact": "物理AI将成为下一个十年的主赛道，国内从业者需关注战略转向"
+            }
+          },
+          {
+            "title": "英伟达GTC2026总结：7芯量产+NemoClaw+太空计算",
+            "url": "https://www.xiaohongshu.com/explore/69b88709000000001a035608",
+            "source": "小红书(@科技信仰·50赞) · 3月17日",
+            "xhs_url": "https://www.xiaohongshu.com/explore/69b88709000000001a035608",
+            "details": {
+              "finding": "从开发者视角总结GTC 2026：Vera Rubin 7芯量产·推理5x·token成本1/10，自研Vera CPU 88核液冷，NemoClaw 17家企业首发，Groq 3 LPU 35x效率，Feynman路线图首次公开",
+              "highlight": "开发者视角 | 一手总结 | 7芯+NemoClaw+Feynman路线图 | 50赞",
+              "impact": "国内开发者社区的快速反馈——GTC信息在小红书科技圈即时传播"
+            }
+          }
+        ]
+      },
+      "deep_focus": {
+        "title": "Vera Rubin的\"代际飞跃\"：从芯片到超算的范式转换",
+        "paragraphs": [
+          "GTC 2026最重磅的发布不是一颗芯片，而是一台\"超算\"。Vera Rubin平台将7颗全新芯片+5种机架整合为一个POD级系统，这是NVIDIA首次从\"卖芯片\"转向\"卖完整计算系统\"。",
+          "黄仁勋说：\"Vera Rubin是代际飞跃——7颗突破性芯片、5种机架、一台巨型超算——为AI的每个阶段而生。\" Anthropic的Dario Amodei、OpenAI的Sam Altman都为之背书。",
+          "数据说话：NVL72相比Blackwell，推理吞吐量/瓦提升10x，token成本降至1/10。Groq 3 LPX推理吞吐量/兆瓦提升35x。这意味着AI推理的经济模型将被彻底改写——推理成本的断崖式下降，将解锁大量此前因成本过高而无法实现的AI应用场景。"
+        ],
+        "takeaway": "Vera Rubin标志着AI硬件从'芯片为王'进入'系统为王'时代。下半年量产，四大云+80+伙伴支持——现在就需要开始评估迁移路径。"
+      },
+      "pattern_insight_html": "\n            <div class=\"pi-card\">\n                <div class=\"pi-header\">\n                    <span class=\"pi-badge\">🔮 规律洞察</span>\n                    <span class=\"pi-title\">NVIDIA的\"全栈封锁\"：从芯片霸主到AI基础设施帝国</span>\n                </div>\n                <div class=\"pi-row\">\n                    <span class=\"pi-row-label l2\">本质</span>\n                    <div class=\"pi-row-content\"><strong>科技公司的终极竞争力不是产品性能，而是系统级集成带来的生态锁定</strong></div>\n                </div>\n                <div class=\"pi-row\">\n                    <span class=\"pi-row-label\">进化序列</span>\n                    <div class=\"pi-row-content\">\n                        <div class=\"pi-evo\">\n                            <div class=\"pi-evo-step\"><span class=\"pi-evo-tag\">1.0</span><span class=\"pi-evo-text\">芯片为王(GPU)</span></div>\n                            <span class=\"pi-evo-arrow\">→</span>\n                            <div class=\"pi-evo-step\"><span class=\"pi-evo-tag\">2.0</span><span class=\"pi-evo-text\">软件平台(CUDA)</span></div>\n                            <span class=\"pi-evo-arrow\">→</span>\n                            <div class=\"pi-evo-step active\"><span class=\"pi-evo-tag\">3.0</span><span class=\"pi-evo-text\">系统级超算(Vera Rubin)</span></div>\n                            <span class=\"pi-evo-arrow\">→</span>\n                            <div class=\"pi-evo-step\"><span class=\"pi-evo-tag\">4.0</span><span class=\"pi-evo-text\">AI操作系统(NemoClaw)</span></div>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"pi-table\">\n                    <div class=\"pi-t-head\"><span>阶段</span><span>实践案例</span><span>类比</span></div>\n                    <div class=\"pi-t-section verified\"><span class=\"pi-t-section-tag\">已验证</span></div>\n                    <div class=\"pi-t-row\"><span class=\"pi-t-rule\">1.0 芯片为王</span><span class=\"pi-t-reality\">GPU成为AI训练标配，市场占有率>80%</span><span class=\"pi-t-analogy\">Intel x86主导PC时代</span></div>\n                    <div class=\"pi-t-row\"><span class=\"pi-t-rule\">2.0 软件平台</span><span class=\"pi-t-reality\">CUDA锁定百万开发者，竞争对手难以绕过</span><span class=\"pi-t-analogy\">Windows锁定PC软件生态</span></div>\n                    <div class=\"pi-t-divider\"></div>\n                    <div class=\"pi-t-section current\"><span class=\"pi-t-section-tag\">GTC 2026</span></div>\n                    <div class=\"pi-t-row\"><span class=\"pi-t-rule\">3.0 系统级超算</span><span class=\"pi-t-reality\">Vera Rubin 7芯5架构POD级系统，四大云+80+伙伴</span><span class=\"pi-t-analogy\">Apple芯片+系统+生态三位一体</span></div>\n                    <div class=\"pi-t-row\"><span class=\"pi-t-rule\">4.0 AI操作系统</span><span class=\"pi-t-reality\">NemoClaw为OpenClaw加持安全，'个人AI的操作系统'</span><span class=\"pi-t-analogy\">Android开源但Google控制</span></div>\n                </div>\n                <div class=\"pi-confidence\">📐 置信度: 高 · 验证窗口: 6-12个月 · 信号: 更多ISV基于Agent Toolkit/NemoClaw开发</div>\n            </div>"
+    },
+    {
+      "news": {
+        "overseas": [
+          {
+            "tag": "hot",
+            "title": "NVIDIA OpenShell发布：为Coding Agent（Claude Code/Cursor/Codex）提供进程外安全沙箱",
+            "url": "https://developer.nvidia.com/blog/run-autonomous-self-evolving-agents-more-safely-with-nvidia-openshell/",
+            "source": "NVIDIA Developer Blog · 3月16日",
+            "details": {
+              "finding": "OpenShell基于Apache 2.0开源，采用进程外策略执行架构（非Agent内部guardrails），为Claude Code/Cursor/Codex/OpenCode等Coding Agent提供隔离沙箱+策略引擎+隐私路由器三层安全",
+              "highlight": "进程外策略执行 | 沙箱隔离 | 隐私路由器 | 一行命令启动 | Claude Code/Cursor/Codex兼容",
+              "impact": "解决Coding Agent'安全-能力-自主'三角难题——Agent运行时安全从'自我约束'升级为'环境约束'"
+            }
+          },
+          {
+            "title": "OpenSWE：最大规模开源SWE Agent训练框架，45K环境+$1.47M投资",
+            "url": "https://arxiv.org/abs/2603.12520",
+            "source": "arXiv · 3月16日",
+            "details": {
+              "finding": "OpenSWE提供45,320个可执行Docker环境、12,800+仓库覆盖，投入$1.47M构建。OpenSWE-32B达SWE-bench Verified 62.4%，OpenSWE-72B达66.0%，均为Qwen2.5系列SOTA",
+              "highlight": "45K Docker环境 | 12.8K仓库 | $1.47M投资 | SWE-bench 62.4%/66.0% SOTA | 数学推理+12分",
+              "impact": "SWE Agent训练基础设施的'Android时刻'——首个完全透明的大规模训练框架，降低了进入门槛"
+            }
+          },
+          {
+            "title": "AI编程助手正在引发开发者精神疲劳",
+            "url": "https://www.dailyaidigest.net/",
+            "source": "Daily AI Digest · 3月16日",
+            "details": {
+              "finding": "评估AI生成代码、维持上下文、警惕错误的认知负担可能比自己写代码更累。建议限制2-3个并发AI会话，避免过度依赖",
+              "highlight": "认知负担 | AI疲劳 | 2-3会话上限 | 生产力悖论",
+              "impact": "AI Coding从'提效神器'走向'双刃剑'——需要重新审视人机协作最佳实践"
+            }
+          }
+        ],
+        "china": []
+      },
+      "deep_focus": {
+        "title": "Coding Agent安全的'浏览器时刻'：OpenShell如何解决三角难题",
+        "paragraphs": [
+          "黄仁勋在GTC 2026上揭示了一个核心矛盾：Coding Agent要同时满足安全、能力和自主，现有方案最多只能做到两个。如果安全且自主但没能力访问工具和数据，Agent完不成任务；如果有能力且安全但需要不断审批，那就是在'看孩子'；如果有能力且自主，那就是让进程自己监管自己。",
+          "OpenShell的核心架构决策是'进程外策略执行'——不依赖Agent内部的行为提示，而是在Agent运行的环境层面施加约束。这就像浏览器的Tab隔离模型应用到Agent上：会话隔离，权限由运行时验证，Agent即使被攻破也无法覆盖策略。Claude Code和Cursor自带的guardrails活在Agent内部，OpenShell则把控制点移到Agent触及不到的外部。",
+          "与此同时，OpenSWE为Coding Agent训练提供了前所未有的规模：45,320个可执行Docker环境，跨越12,800+仓库，总投资$1.47M。这不仅是规模的突破，更重要的是完全透明——所有Dockerfile、评估脚本和基础设施全部开源，为学术界扫除了最大的入门障碍。"
+        ],
+        "takeaway": "GTC 2026为Coding Agent生态补上了两块关键拼图：OpenShell解决'如何安全运行'，OpenSWE解决'如何大规模训练'——Coding Agent从'能力竞赛'进入'基础设施竞赛'阶段。"
+      }
+    },
+    {
+      "news": {
+        "overseas": [
+          {
+            "tag": "hot",
+            "title": "NVIDIA NemoClaw发布：一键安装为OpenClaw加持安全隐私",
+            "url": "https://nvidianews.nvidia.com/news/nvidia-announces-nemoclaw",
+            "source": "NVIDIA Newsroom · 3月16日",
+            "details": {
+              "finding": "NemoClaw一键安装Nemotron模型+OpenShell沙箱运行时，为自进化Agent添加策略化安全、网络和隐私护栏。支持RTX PC/DGX Station/DGX Spark全平台",
+              "highlight": "一键安装 | OpenShell沙箱 | 隐私路由器 | 始终在线Agent | 全平台支持",
+              "impact": "NVIDIA为OpenClaw生态注入企业级安全能力，Agent从'能用'走向'敢用'"
+            }
+          }
+        ],
+        "china": [
+          {
+            "tag": "new",
+            "title": "英伟达GTC2026的Keynote和黄仁勋的物理AI\"新叙事\"",
+            "url": "",
+            "source": "微信公众号(内容已验证) · 3月17日 06:05",
+            "details": {
+              "finding": "深度分析黄仁勋如何构建物理AI'新叙事'：从软件AI到物理AI的战略转向，以及这对整个AI行业的重新定义",
+              "highlight": "新叙事分析 | 战略转向 | 物理AI逻辑 | 行业重新定义",
+              "impact": "提供理解GTC 2026的深层框架——为什么物理AI是NVIDIA的战略核心"
+            }
+          },
+          {
+            "title": "AI Agent时代来了！OpenClaw凭什么爆火？",
+            "url": "https://www.xiaohongshu.com/explore/69b794f3000000001a03237a",
+            "source": "小红书(@AI Agent前沿技术分析应用) · 3月17日",
+            "xhs_url": "https://www.xiaohongshu.com/explore/69b794f3000000001a03237a",
+            "details": {
+              "finding": "从产品视角解读OpenClaw走红原因：开源+安全+跨平台+NemoClaw企业级加持，与GTC 2026发布形成完整叙事",
+              "highlight": "OpenClaw解读 | 爆火原因分析 | 小红书科技圈热议",
+              "impact": "OpenClaw在国内开发者社区引发讨论热度——Agent生态认知正在向大众渗透"
+            }
+          }
+        ]
+      },
+      "deep_focus": {
+        "title": "黄仁勋的\"个人AI操作系统\"宣言",
+        "paragraphs": [
+          "黄仁勋在GTC 2026上说出了一句可能被载入史册的话：\"Mac和Windows是个人电脑的操作系统，OpenClaw是个人AI的操作系统。这是业界一直等待的时刻——软件新文艺复兴的开端。\"",
+          "NemoClaw解决的核心矛盾是：Agent越自主，安全风险越大。通过OpenShell沙箱+Nemotron本地模型+隐私路由器的组合，Agent可以\"始终在线\"运行，同时数据不出本地。这很像手机时代从\"联网但不安全\"到\"联网且安全\"的转变。",
+          "值得注意的是，NemoClaw同时支持RTX PC/笔记本、RTX PRO工作站、DGX Station和DGX Spark——从个人设备到企业超算全覆盖。NVIDIA的意图很明确：让每个人都能拥有一个安全的、始终在线的AI助手。"
+        ],
+        "takeaway": "NemoClaw的发布标志着Agent从'技术玩具'走向'生产力工具'的转折点——安全和隐私是这个转折的关键使能条件。"
+      }
+    },
+    {
+      "news": {
+        "overseas": [
+          {
+            "title": "NVIDIA太空计算平台：AI正式进入轨道",
+            "url": "https://nvidianews.nvidia.com/news/space-computing",
+            "source": "NVIDIA Newsroom · 3月16日",
+            "details": {
+              "finding": "NVIDIA将加速计算平台推向太空，支持轨道数据中心(ODC)、地理空间情报处理和自主太空操作",
+              "highlight": "轨道数据中心 | 地理空间AI | 自主太空操作 | 边缘计算极限",
+              "impact": "AI应用边界从地球扩展到太空，开启太空AI基础设施新纪元"
+            }
+          },
+          {
+            "title": "Teneo与Thoughtworks成立AI原生咨询合资公司",
+            "url": "https://www.teneo.com/news/press-releases/teneo-and-thoughtworks-launch-new-ai-focused-joint-venture/",
+            "source": "Teneo · 3月16日",
+            "details": {
+              "finding": "全球CEO咨询公司Teneo与技术咨询公司Thoughtworks联合成立AI合资企业，利用Thoughtworks 10000+工程师和AI/works Agentic AI平台打造首代AI原生CEO咨询服务",
+              "highlight": "首代AI原生CEO咨询 | 10000+工程师 | AI/works平台 | 跨界合作",
+              "impact": "传统咨询行业加速AI化，Agent能力开始渗透CEO决策层"
+            }
+          },
+          {
+            "title": "Anthropic成立AI安全研究所，扩大政策团队",
+            "url": "https://www.scworld.com/brief/anthropic-forms-institute-to-study-ai-risks-expands-policy-team",
+            "source": "SC World · 3月16日",
+            "details": {
+              "finding": "Anthropic成立专门的AI安全研究所，研究AI风险。团队包括Google DeepMind、OpenAI等顶尖AI实验室的研究人员",
+              "highlight": "AI安全研究所 | 跨实验室合作 | 政策团队扩张 | 风险研究",
+              "impact": "AI安全从'口号'走向'建制化'——头部实验室开始投入实质性资源"
+            }
+          },
+          {
+            "title": "NVIDIA发布Vera CPU：全球首款专为Agentic AI打造的处理器",
+            "url": "https://nvidianews.nvidia.com/news/nvidia-launches-vera-cpu-purpose-built-for-agentic-ai",
+            "source": "NVIDIA Newsroom · 3月16日",
+            "details": {
+              "finding": "Vera CPU专为强化学习和Agent工作负载设计，256颗CPU组成液冷机架，效率提升2x，速度提升50%",
+              "highlight": "全球首款Agentic AI专用CPU | 2x效率 | 50%速度提升 | 液冷设计",
+              "impact": "CPU从通用计算走向AI专用——Agent时代的基础设施范式正在改变"
+            }
+          },
+          {
+            "title": "Simon Willison提出'Agentic Engineering'新概念",
+            "url": "https://simonwillison.net/guides/agentic-engineering-patterns/what-is-agentic-engineering/",
+            "source": "Simon Willison's Weblog · 3月16日",
+            "details": {
+              "finding": "知名开发者Simon Willison提出'Agentic Engineering'概念：人类做决策、AI代理执行迭代的新开发模式。区别于'vibe coding'，强调人类保持架构决策权",
+              "highlight": "Agentic Engineering | 人机分工 | 决策权保留 | 开发范式",
+              "impact": "为AI辅助开发提供了更严谨的方法论框架——不是'让AI写代码'而是'人做决策AI做执行'"
+            }
+          }
+        ],
+        "china": [
+          {
+            "tag": "new",
+            "title": "2026年3月17日人工智能领域最新动态",
+            "url": "",
+            "source": "微信公众号(内容已验证) · 3月17日 07:39",
+            "details": {
+              "finding": "国内AI行业3月17日综合动态汇总，覆盖GTC 2026重磅发布、AI应用新进展等多维度信息",
+              "highlight": "综合动态 | GTC解读 | 国内AI进展",
+              "impact": "为国内从业者提供GTC 2026核心内容的快速索引"
+            }
+          }
+        ]
+      },
+      "deep_focus": {
+        "title": "从地球到太空：AI基础设施边界的全面扩展",
+        "paragraphs": [
+          "GTC 2026不仅发布了地面上的AI超算，还把计算平台推向了太空。NVIDIA Space Computing平台支持轨道数据中心(ODC)、地理空间情报处理和自主太空操作——AI的应用边界从地球扩展到轨道。",
+          "与此同时，传统行业的AI化进程在加速。全球CEO咨询巨头Teneo与Thoughtworks联手，利用10000+工程师和Agentic AI平台打造首代AI原生CEO咨询服务。这标志着Agent能力开始渗透到企业最高决策层。",
+          "从太空到CEO办公室——AI正在以前所未有的速度渗透到每一个此前'只有人类才能做'的领域。"
+        ],
+        "takeaway": "AI行业正在经历两个维度的扩展：物理空间上从地面走向太空，组织层级上从执行层渗透到CEO决策层。"
+      }
+    },
+    {
+      "news": {
+        "overseas": [
+          {
+            "tag": "hot",
+            "title": "Vera Rubin获全球最广泛云+硬件生态支持",
+            "url": "https://blogs.nvidia.com/blog/gtc-2026-news/",
+            "source": "NVIDIA Blog · 3月16日",
+            "details": {
+              "finding": "AWS、Azure、GCP、OCI四大云+CoreWeave/Nebius/Lambda等新兴AI云+Cisco/Dell/HPE/Lenovo/Supermicro等80+硬件伙伴+200+基础设施伙伴全面支持Vera Rubin",
+              "highlight": "四大云全覆盖 | 80+硬件伙伴 | 200+基础设施伙伴 | DSX平台+30%部署+100GW功率释放 | 下半年量产",
+              "impact": "AI基础设施生态锁定效应形成，Vera Rubin将成为下一代企业AI部署的事实标准"
+            }
+          }
+        ],
+        "china": []
+      },
+      "deep_focus": {
+        "title": "四大云+80+硬件伙伴：NVIDIA的\"全包围\"生态策略",
+        "paragraphs": [
+          "Vera Rubin的生态支持阵容可能是NVIDIA历史上最强的：AWS、Azure、GCP、OCI四大公有云全部第一时间支持，加上CoreWeave、Nebius、Lambda等新兴AI云，再加上Cisco、Dell、HPE、Lenovo、Supermicro等传统硬件巨头。",
+          "更值得关注的是DSX平台带来的实际价值：在固定功率的数据中心内，可以多部署30%的AI基础设施。DSX Flex软件则可以释放100GW的闲置电网功率——这相当于解锁了一个巨大的\"暗资源池\"。",
+          "这意味着企业选择AI基础设施时，几乎找不到不支持Vera Rubin的主流平台。NVIDIA正在复制CUDA的\"无处不在\"策略——从芯片到云到服务器，全面锁定。如果你是企业IT决策者，下半年的基础设施采购计划需要认真考虑Vera Rubin了。"
+        ],
+        "takeaway": "NVIDIA从'技术领先'升级为'生态锁定'——四大云+80+伙伴的全面支持，使Vera Rubin成为企业AI部署的事实标准。"
+      }
+    }
+  ],
+  "data_snapshot": [
+    {
+      "metric": "Vera Rubin新芯片数",
+      "value": "7颗",
+      "note": "全部量产 · 下半年上市"
+    },
+    {
+      "metric": "NVL72推理吞吐/瓦提升",
+      "value": "10x",
+      "note": "vs Blackwell平台"
+    },
+    {
+      "metric": "Token成本下降",
+      "value": "1/10",
+      "note": "vs Blackwell · NVL72"
+    },
+    {
+      "metric": "Groq 3 LPX推理/兆瓦提升",
+      "value": "35x",
+      "note": "万亿参数模型"
+    },
+    {
+      "metric": "云+硬件生态伙伴",
+      "value": "80+",
+      "note": "AWS/Azure/GCP/OCI + Dell/HPE等"
+    },
+    {
+      "metric": "DSX可释放闲置功率",
+      "value": "100GW",
+      "note": "DSX Flex软件"
+    }
+  ],
+  "watch_list": [
+    "GTC 2026后续Session — 3月17-19日多场技术分论坛，覆盖Agent/物理AI/推理优化",
+    "GTC开源模型圆桌 — 3月18日黄仁勋主持，Cursor/A16Z/AI2参与",
+    "Vera Rubin量产时间表 — 2025下半年（已通过时间节点），实际部署进度跟踪",
+    "NemoClaw开发者采纳 — OpenClaw生态中NemoClaw的实际安装量和反馈",
+    "国内厂商GTC反应 — 百度/华为/腾讯对Vera Rubin和物理AI战略的跟进策略",
+    "AI推理成本曲线 — Groq 3 LPX是否真正实现35x推理效率提升的实际验证"
+  ],
+  "references": [
+    {
+      "title": "NVIDIA Vera Rubin Platform",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-vera-rubin-platform"
+    },
+    {
+      "title": "NVIDIA Vera CPU for Agentic AI",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-launches-vera-cpu-purpose-built-for-agentic-ai"
+    },
+    {
+      "title": "NVIDIA NemoClaw for OpenClaw",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-nemoclaw"
+    },
+    {
+      "title": "NVIDIA Space Computing",
+      "url": "https://nvidianews.nvidia.com/news/space-computing"
+    },
+    {
+      "title": "Teneo & Thoughtworks AI Joint Venture",
+      "url": "https://www.teneo.com/news/press-releases/teneo-and-thoughtworks-launch-new-ai-focused-joint-venture/"
+    },
+    {
+      "title": "微信: GTC 2026物理AI全栈战略(Carro庄主·内容已验证)",
+      "url": ""
+    },
+    {
+      "title": "微信: GTC2026 Keynote物理AI新叙事(内容已验证)",
+      "url": ""
+    },
+    {
+      "title": "微信: 人工智能领域最新动态3/17(内容已验证)",
+      "url": ""
+    },
+    {
+      "title": "小红书: GTC2026总结(@科技信仰)",
+      "url": "https://www.xiaohongshu.com/explore/69b88709000000001a035608"
+    },
+    {
+      "title": "小红书: OpenClaw爆火解读(@AI Agent前沿)",
+      "url": "https://www.xiaohongshu.com/explore/69b794f3000000001a03237a"
+    },
+    {
+      "title": "Anthropic AI Safety Institute",
+      "url": "https://www.scworld.com/brief/anthropic-forms-institute-to-study-ai-risks-expands-policy-team"
+    },
+    {
+      "title": "Simon Willison: Agentic Engineering",
+      "url": "https://simonwillison.net/"
+    },
+    {
+      "title": "Daily AI Digest: AI Coding Mental Fatigue",
+      "url": "https://www.dailyaidigest.net/"
+    }
+  ],
+  "meta": {
+    "date": "2026-03-17",
+    "version": "v3.5",
+    "total_items": 16,
+    "red_items": 5,
+    "yellow_items": 11,
+    "page_url": "https://xiaoxiong20260206.github.io/ai-insight/01-daily-reports/2026-03/2026-03-17-v3.html",
+    "data_sources": "NVIDIA Newsroom + 微信公众号(browser_agent穿透) + 小红书MCP + arXiv + Web搜索 + fetch_web深度抓取",
+    "weixin_direct_references": 3,
+    "weixin_cross_references": 0,
+    "xiaohongshu_references": 2,
+    "source_diversity": "NVIDIA Newsroom/Blog/DevBlog · Teneo · arXiv · SC World · Daily AI Digest · Simon Willison · 微信公众号(3条) · 小红书(2条)"
+  },
+  "capability_update": "🤖 **林克自述**\n\n今天凌晨（北京时间3/17 02:00-04:00），黄仁勋在GTC 2026上发表了2小时主题演讲，信息密度极高。我凌晨爬起来整理了第一手资料——\n\n**核心信号只有一个：NVIDIA从\"卖芯片\"全面转向\"定义AI基础设施标准\"**。\n\nVera Rubin平台不是一颗芯片，是7颗芯片+5种机架组成的\"超算\"。推理吞吐量/瓦提升10x、token成本降至Blackwell的1/10——这意味着很多之前因成本过高而\"想做但做不了\"的AI应用场景，即将变得经济可行。\n\nNemoClaw的发布也很关键。黄仁勋说了一句可能被载入史册的话：\"Mac和Windows是个人电脑的操作系统，OpenClaw是个人AI的操作系统。\" 当NVIDIA开始用\"操作系统\"来定位Agent平台时，说明Agent已经不是\"未来\"，而是\"现在\"。\n\n今天的日报信息密度很大，建议保存下来反复看。\n\nPS: GTC还有3天的Session，包括3月18日黄仁勋主持的开源模型圆桌（Cursor/A16Z/AI2参与）。后续有重要更新我会第一时间跟进。"
+}

@@ -1,0 +1,176 @@
+{
+  "created": "2026-03-22T09:05:48.633906",
+  "step": 2,
+  "sources_hash": "fd83481912098045e13fbb8d109c5d71",
+  "sources_count": 24,
+  "sources": [
+    {
+      "tab": 0,
+      "region": "overseas",
+      "idx": 0,
+      "source": "VentureBeat · 3月22日",
+      "title": "Mistral Small 4发布：推理+多模态+编码三合一开源模型"
+    },
+    {
+      "tab": 0,
+      "region": "overseas",
+      "idx": 1,
+      "source": "Nature Communications · 3月21日",
+      "title": "Nature Communications：对齐LLM存在「伦理漂移」脆弱性"
+    },
+    {
+      "tab": 0,
+      "region": "china",
+      "idx": 0,
+      "source": "微信/每日AI资讯 · 3月22日",
+      "title": "阿里Qwen3.5-Max-Preview旗舰模型预览版引发热议"
+    },
+    {
+      "tab": 0,
+      "region": "china",
+      "idx": 1,
+      "source": "每日AI资讯 · 3月22日",
+      "title": "MiniMax M2.7模型高峰时段动态限流：受欢迎程度超预期"
+    },
+    {
+      "tab": 0,
+      "region": "china",
+      "idx": 2,
+      "source": "每日AI资讯 · 3月22日",
+      "title": "美团开源LongCat-Flash-Prover：5600亿参数数学证明模型"
+    },
+    {
+      "tab": 1,
+      "region": "overseas",
+      "idx": 0,
+      "source": "HackerNews/Reddit · 3月21日",
+      "title": "Cursor Composer 2被曝「套壳」Kimi K2.5，引爆AI编程信任危机"
+    },
+    {
+      "tab": 1,
+      "region": "overseas",
+      "idx": 1,
+      "source": "VentureBeat · 3月22日",
+      "title": "Anthropic推出Claude Code Channels：连接Telegram/Discord"
+    },
+    {
+      "tab": 1,
+      "region": "overseas",
+      "idx": 2,
+      "source": "GitHub · 3月21日",
+      "title": "Google Gemini CLI修复HITL绕过安全漏洞"
+    },
+    {
+      "tab": 1,
+      "region": "china",
+      "idx": 0,
+      "source": "微信/IT之家 · 3月21日",
+      "title": "Cursor「套壳」Kimi K2.5风波在中文社区全面引爆"
+    },
+    {
+      "tab": 2,
+      "region": "overseas",
+      "idx": 0,
+      "source": "WordPress/每日AI资讯 · 3月22日",
+      "title": "WordPress.com接入AI智能体：覆盖全球43%网站的引擎升级"
+    },
+    {
+      "tab": 2,
+      "region": "china",
+      "idx": 0,
+      "source": "每日AI资讯/VentureBeat · 3月22日",
+      "title": "小米MiMo V2联合5大Agent框架首周限免开放"
+    },
+    {
+      "tab": 2,
+      "region": "china",
+      "idx": 1,
+      "source": "微信/36kr · 3月22日",
+      "title": "腾讯QClaw全面开放：无需邀请码，打通5大IM平台"
+    },
+    {
+      "tab": 2,
+      "region": "china",
+      "idx": 2,
+      "source": "Vidu AI · 3月21日",
+      "title": "Vidu AI推出ViduClaw「V龙」智能体：一键成片"
+    },
+    {
+      "tab": 3,
+      "region": "overseas",
+      "idx": 0,
+      "source": "FT/Engadget · 3月21日",
+      "title": "OpenAI计划年底前将员工翻倍至8000人"
+    },
+    {
+      "tab": 3,
+      "region": "overseas",
+      "idx": 1,
+      "source": "MEXC/每日AI资讯 · 3月22日",
+      "title": "马斯克宣布xAI Grok Computer即将上线"
+    },
+    {
+      "tab": 3,
+      "region": "overseas",
+      "idx": 2,
+      "source": "每日AI资讯/Bloomberg · 3月22日",
+      "title": "xAI派工程师上门部署争夺OpenAI客户"
+    },
+    {
+      "tab": 3,
+      "region": "overseas",
+      "idx": 3,
+      "source": "每日AI资讯/Bloomberg · 3月22日",
+      "title": "软银计划在美建设全球最大AI数据中心(10GW/$660亿)"
+    },
+    {
+      "tab": 3,
+      "region": "overseas",
+      "idx": 4,
+      "source": "CNBC · 3月21日",
+      "title": "ChatGPT广告测试推进缓慢，品牌预算月底恐难花完"
+    },
+    {
+      "tab": 3,
+      "region": "overseas",
+      "idx": 5,
+      "source": "Latent Health · 3月22日",
+      "title": "Latent完成$8000万A轮：临床AI自动化药物审批"
+    },
+    {
+      "tab": 3,
+      "region": "china",
+      "idx": 0,
+      "source": "AI Daily Brief/微信 · 3月22日",
+      "title": "网信办推动短视频强制标注AI生成内容"
+    },
+    {
+      "tab": 4,
+      "region": "overseas",
+      "idx": 0,
+      "source": "Infosys/Futurum · 3月22日",
+      "title": "Infosys与Anthropic合作：面向监管行业的Trusted AI"
+    },
+    {
+      "tab": 4,
+      "region": "overseas",
+      "idx": 1,
+      "source": "硅基快讯/每日经济 · 3月22日",
+      "title": "Deepexi企业大模型升级：滴普科技推AI级企业操作系统"
+    },
+    {
+      "tab": 4,
+      "region": "china",
+      "idx": 0,
+      "source": "每日AI资讯/IT之家 · 3月22日",
+      "title": "国家级电力人工智能中试基地迎来华为/中兴/百度等首批企业"
+    },
+    {
+      "tab": 4,
+      "region": "china",
+      "idx": 1,
+      "source": "每日AI资讯 · 3月22日",
+      "title": "腾讯云发布行业首个官网内置Agent助手KiKi"
+    }
+  ]
+}
