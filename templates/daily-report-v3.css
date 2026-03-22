@@ -173,7 +173,8 @@
             .pi-t-row.projected{border-left-color:rgba(124,58,237,.3)}
             .pi-t-analogy{border-left:none;padding-left:0;font-size:12px}
         }
-    </style>\n
+    </style>
+
 /* Theme Default (Light) is already defined in :root */
 [data-theme="dark"] {
     --color-text-primary: #F3F4F6;
@@ -259,41 +260,18 @@
         transform-origin: top right;
     }
 }
-\n
+
+
 
 /* Search UI Styles - Redesigned */
-.search-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto 20px auto;
-    width: 600px;
-    max-width: 100%;
-    position: relative;
-    z-index: 50;
-}
-.search-input {
-    background: var(--color-bg);
-    border: 2px solid var(--color-border);
-    color: var(--color-text-primary);
-    padding: 12px 20px 12px 45px;
-    border-radius: 30px;
-    font-size: 16px;
-    width: 100%;
-    box-shadow: var(--shadow-sm);
-    transition: all 0.3s ease;
-}
+.search-container { position: relative; margin: 0 auto 24px auto; width: 600px; max-width: 90%; z-index: 50; }
+.search-input { display: block; background: var(--color-bg); border: 2px solid var(--color-border); color: var(--color-text-primary); padding: 12px 20px 12px 45px; border-radius: 30px; font-size: 16px; width: 100%; box-sizing: border-box; box-shadow: var(--shadow-sm); transition: all 0.3s ease; }
 .search-input:focus {
     outline: none;
     border-color: #059669;
     box-shadow: 0 4px 12px rgba(5,150,105,0.15);
 }
-.search-icon {
-    position: absolute;
-    left: 18px;
-    font-size: 18px;
-    color: var(--color-text-muted);
-}
+.search-icon { position: absolute; left: 18px; top: 50%; transform: translateY(-50%); font-size: 18px; color: var(--color-text-muted); pointer-events: none; }
 
 /* Search Modal */
 #search-modal {

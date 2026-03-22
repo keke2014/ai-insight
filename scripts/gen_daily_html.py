@@ -139,7 +139,8 @@ def render_section(section: dict) -> str:
         parts.append('                <div class="sub-header">🇨🇳 国内</div>')
         for item in section["china"]:
             parts.append(render_news_item(item))
-    return "\n".join(parts)
+    return "
+".join(parts)
 
 
 # ============ 深度聚焦卡片 ============
@@ -161,7 +162,9 @@ def normalize_deep_focus(raw: dict) -> dict:
             takeaway = parts[1].strip()
             break
     # 按句号拆段（至少2段）
-    sentences = [s.strip() for s in summary.replace("。", "。\n").split("\n") if s.strip()]
+    sentences = [s.strip() for s in summary.replace("。", "。
+").split("
+") if s.strip()]
     if len(sentences) <= 1:
         paragraphs = [summary] if summary else []
     else:
@@ -191,7 +194,8 @@ def render_deep_focus(df: dict, theme: str = "") -> str:
 
     takeaway_html = ""
     if ndf['takeaway']:
-        takeaway_html = f'''\n                    <div class="deep-focus-takeaway{takeaway_theme}">
+        takeaway_html = f'''
+                    <div class="deep-focus-takeaway{takeaway_theme}">
                         <div class="deep-focus-takeaway-label{label_color}">💡 TAKEAWAY</div>
                         <div class="deep-focus-takeaway-text">{ndf['takeaway']}</div>
                     </div>'''
@@ -253,7 +257,8 @@ def render_heat_trend(heat: dict) -> str:
 # ============ 数据速览表格 ============
 
 def render_data_table(data: list) -> str:
-    rows = "\n".join(
+    rows = "
+".join(
         f'                    <tr><td>{d["metric"]}</td><td><strong>{d["value"]}</strong></td><td>{d["note"]}</td></tr>'
         for d in data
     )
@@ -454,7 +459,8 @@ def generate_html(data: dict) -> str:
         <div class="header">
         <span class="search-icon">🔍</span>
         <input type="text" id="search-input" class="search-input" placeholder="搜索AI资讯..." autocomplete="off">
-    </div>\n            <div class="theme-switcher-container">
+    </div>
+            <div class="theme-switcher-container">
     <button id="theme-btn-light" class="theme-switcher-btn" title="白天模式" onclick="setTheme('light')">☀️</button>
     <button id="theme-btn-system" class="theme-switcher-btn active" title="跟随系统" onclick="setTheme('system')">💻</button>
     <button id="theme-btn-dark" class="theme-switcher-btn" title="夜间模式" onclick="setTheme('dark')">🌙</button>
