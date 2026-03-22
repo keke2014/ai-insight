@@ -451,7 +451,7 @@ def generate_html(data: dict) -> str:
 </head>
 <body>
     <div class="container">
-        <div class="header">\n        <div class="search-container">
+        <div class="header">
         <span class="search-icon">🔍</span>
         <input type="text" id="search-input" class="search-input" placeholder="搜索AI资讯..." autocomplete="off">
     </div>\n            <div class="theme-switcher-container">
